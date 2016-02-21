@@ -1,10 +1,14 @@
 // ISI scroll animation
 function ISIscroll(){
-    var content = $(".scrollInner"),autoScrollTimer=85000,autoScrollTimerAdjust,autoScroll;
+    var content = $(".scrollInner"),
+          autoScrollTimer=85000,
+          autoScrollTimerAdjust,
+          autoScroll;
 
     content.mCustomScrollbar({
-        scrollButtons:{enable:true,scrollAmount:1},
-		mouseWheel:{scrollAmount:12 }
+        scrollButtons:{ enable:true,
+                                scrollAmount:1},
+		        mouseWheel:{scrollAmount:12 }
 		//, callbacks:{
                         //     whileScrolling:function(){
                         //         autoScrollTimerAdjust=autoScrollTimer*this.mcs.topPct/100;
@@ -53,6 +57,8 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 ,       s4box = document.getElementsByClassName('box')[0]
 ,       s5logo = document.getElementsByClassName('logo')[0]
 ,       s5t1 = document.getElementsByClassName('screen5_txt1')[0]
+,       scroller = document.getElementsByClassName('scrollBlock')[0]
+,       footer = document.getElementsByClassName('footer')[0]
 ,       shine = document.getElementsByClassName('shine')[0]
 ,       cta = document.getElementsByClassName('txtbtn2')[0]
 ;
@@ -73,8 +79,10 @@ t1
 .to(s4t2, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "fourout")
 .to(s5logo, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "fivein")
 .to(s4box, 1, {scale:0.5, css: {top:15}, ease:"easeInOutBack"}, "fivein")
+.to(scroller, 1, {css: {display:"block"}, ease:"easeInOutBack"}, "+=1")
+.to(footer, 1, {css: {display:"block"}, ease:"easeInOutBack"}, "-=1")
 .to(s5t1, 1, {css: {opacity:1}, ease:"easeInOutBack"})
-.from(cta, 1, {css: {opacity:0,right:-200}, ease:"easeInOutBack"}, "cta")
-.to(shine, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "cta")
+.from(cta, 1, {css: {opacity:0,right:-200}, ease:"easeInOutBack"})
+.to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutBack"})
 ;
 t1.seek("fourout");

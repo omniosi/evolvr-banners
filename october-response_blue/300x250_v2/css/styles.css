@@ -152,12 +152,14 @@ img{
 .txtbtn2{
 	opacity: 1;
 	top: 104px; right: 4px;
-	width: 150px; height: 43px;
+	width: 137px; height: 29px;
 	z-index: 3;
 	overflow: hidden;
+	border-radius: 5px;
 }
 .shine{
-   left: 74px; top: 104px;
+   left: -80px;
+   top: 0;
    z-index: 1;
 }
 .txtbtnhover{
@@ -169,7 +171,7 @@ img{
 /*///////////////////////////////////////// Scroll /////////////////////////////////////*/
 .scrollBlock{
 	display: none;
-	opacity:0;
+	/*opacity:0;*/
 	height: 85px;
 	position: absolute;
 	left:0;
@@ -247,7 +249,7 @@ font-style: normal;
 }
 
 .footer{
-	/*display: none;*/
+	display: none;
 	text-align: left;
     height: 18px;
     font-size: 11px;
@@ -258,7 +260,7 @@ font-style: normal;
 	position: absolute;
 	bottom: 0px;
 	width: 298px;
-	opacity:0;
+	/*opacity:0;*/
 	display:none;
 }
 
