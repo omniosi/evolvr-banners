@@ -2,6 +2,7 @@ html{padding:0;margin: 0;box-sizing: border-box;	}
 *,*:before,*:after{padding:inherit;margin:inherit;box-sizing: inherit}
 
 #banner-wrapper{
+	position: absolute;
 	width:300px;
 	height:250px;
 	border: 1px solid #999;
@@ -67,7 +68,6 @@ img{
 	left: 9px;	top: 30px;
 }
 .screen5_txt1{
-	opacity: 1;
 	font-size: 18px;
 	font-family: "Roboto",sans-serif;
 	left: 9px; top: 67px;
@@ -130,7 +130,7 @@ img{
 	position: absolute;
 	opacity:0;
 }
-.box{ right: -150px; top: 30px; }
+.box{ right: 10px; top: 30px; width: 138px; height: 126px; opacity:1;}
 .logo{ left: 0px;  top: 0px; }
 #btn_txt{	left: 16px; top: 8.5px; }
 #btn_arrow{ left: 117px; top: 5px; }
@@ -147,12 +147,14 @@ img{
 }
 .txtbtn{
 	top: 104px; right: -150px;
-	width: 150px;	height: 43px;
+	width: 150px; height: 43px;
 }
 .txtbtn2{
+	opacity: 1;
 	top: 104px; right: 4px;
 	width: 150px; height: 43px;
 	z-index: 3;
+	overflow: hidden;
 }
 .shine{
    left: 74px; top: 104px;
