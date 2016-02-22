@@ -50,6 +50,7 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 ,          s3 = document.getElementsByClassName('screen3')[0]
 ,          s4 = document.getElementsByClassName('screen4')[0]
 ,          s5 = document.getElementsByClassName('screen5')[0]
+,       s2t1 = document.getElementsByClassName('screen2_txt1')[0]
 ,       s2t2 = document.getElementsByClassName('screen2_txt2')[0]
 ,       s3t2 = document.getElementsByClassName('screen3_txt2')[0]
 ,       s4t1 = document.getElementsByClassName('screen4_txt1')[0]
@@ -61,28 +62,61 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 ,       footer = document.getElementsByClassName('footer')[0]
 ,       shine = document.getElementsByClassName('shine')[0]
 ,       cta = document.getElementsByClassName('txtbtn2')[0]
+,       clock1 = document.getElementsByClassName('clock1')[0]
+,       clock2 = document.getElementsByClassName('clock2')[0]
+,       clock3 = document.getElementsByClassName('clock3')[0]
+,       clock4 = document.getElementsByClassName('clock4')[0]
+,       clock5 = document.getElementsByClassName('clock5')[0]
+,       clock6 = document.getElementsByClassName('clock6')[0]
+,       pin1 = document.getElementsByClassName('pin1')[0]
+,       pin2 = document.getElementsByClassName('pin2')[0]
+,       pin3 = document.getElementsByClassName('pin3')[0]
+,       pin4 = document.getElementsByClassName('pin4')[0]
+,       pin5 = document.getElementsByClassName('pin5')[0]
+,       pin6 = document.getElementsByClassName('pin6')[0]
+,       pin7 = document.getElementsByClassName('pin7')[0]
+,       pin8 = document.getElementsByClassName('pin8')[0]
+,       pin9 = document.getElementsByClassName('pin9')[0]
+,       pin10 = document.getElementsByClassName('pin10')[0]
 ;
 // Animations
 var t1 = new TimelineLite();
 t1
-.to(s2, 1, {css: {opacity:1}, ease:"easeInOutBack"})
-.to(s2t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "+=0.5")
-.to(s2, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "+=2")
-.to(s3, 0.5, {css: {opacity:1}, ease:"easeInOutBack"})
-.to(s3t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "+=1")
-.to(s3, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "+=2")
-.to(s4, 0.5, {css: {opacity:1}, ease:"easeInOutBack"})
+.to(s2, 0, {autoAlpha:1, ease:"easeInOutBack"}, "one")
+.from(s2t1, 1, {top:100, ease:"easeInOutBack"}, "+=0.5")
+.to(s2t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.5")
+.from(clock1,0.5,{scale:0,ease:"easeInOutBack"}, "-=1")
+.from(clock4,0.5,{scale:0,ease:"easeInOutBack"})
+.from(clock6,0.5,{scale:0,ease:"easeInOutBack"})
+.from(clock3,0.5,{scale:0,ease:"easeInOutBack"})
+.from(clock2,0.5,{scale:0,ease:"easeInOutBack"})
+.from(clock5,0.5,{scale:0,ease:"easeInOutBack"})
+.to(s2, 1, {autoAlpha:0, ease:"easeInOutBack"},"cross")
+.to(s3, 1, {autoAlpha:1, ease:"easeInOutBack"},"cross")
+.from(s3t2, 1, {opacity:0, top:108, ease:"easeInOutBack"})
+.from(pin1,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=1")
+.from(pin2,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin3,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin4,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin5,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin6,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin7,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin8,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin10,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.to(s3, 0.5, {autoAlpha:0, ease:"easeInOutBack"})
+.to(s4, 0.5, {autoAlpha:1, ease:"easeInOutBack"})
 .to(s4t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.25")
-.from(s4box, 1, {css: {top:30,right:-150,opacity:0}, ease:"easeInOutBack"}, "-=0.25")
-.to(s5, 0.5, {css: {opacity:1}, ease:"easeInOutBack"}, "+=2")
+.from(s4box, 1, {css: {top:30,right:-150,opacity:0}, ease:"easeInOutBack"}, "-=1")
+.to(s5, 0.5, {autoAlpha:1, ease:"easeInOutBack"}, "+=1")
 .to(s4t1, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "fourout")
 .to(s4t2, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "fourout")
 .to(s5logo, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "fivein")
-.to(s4box, 1, {scale:0.5, css: {top:15}, ease:"easeInOutBack"}, "fivein")
-.to(scroller, 1, {css: {display:"block"}, ease:"easeInOutBack"}, "+=1")
-.to(footer, 1, {css: {display:"block"}, ease:"easeInOutBack"}, "-=1")
-.to(s5t1, 1, {css: {opacity:1}, ease:"easeInOutBack"})
-.from(cta, 1, {css: {opacity:0,right:-200}, ease:"easeInOutBack"})
+.to(s4box, 1, {top:-3, right:-4, scale:0.75, ease:"easeInOutBack"}, "fivein")
+.from(s5t1, 1, {top:"-=20", opacity:0, ease:"easeInOutBack"})
+.from(cta, 1, {autoAlpha:0,right:-200, ease:"easeInOutBack"})
+.to(scroller, 1, {autoAlpha:1, ease:"easeInOutBack"}, "+=1")
+.to(footer, 1, {autoAlpha:1, ease:"easeInOutBack"}, "-=1")
 .to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutBack"})
 ;
-t1.seek("fourout");
+// t1.seek("fourout");
