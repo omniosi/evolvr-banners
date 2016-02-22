@@ -373,6 +373,10 @@ z-index: 5;
 	cursor:pointer;
 	text-decoration:underline;
 }
+#isi_mylan{
+	position: relative;
+	left: 5px;
+}
 
 /********************** Scroll Bar CSS ****************/
 .mCSB_scrollTools .mCSB_buttonUp {
