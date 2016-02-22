@@ -376,14 +376,14 @@ z-index: 5;
 
 /********************** Scroll Bar CSS ****************/
 .mCSB_scrollTools .mCSB_buttonUp {
-	background: rgba(0, 0, 0, 0) url("..img/arrow-up.png") no-repeat scroll center top;
+	background: rgba(0, 0, 0, 0) url("../img/arrow-up.png") no-repeat scroll center top;
 	height: 6px;
 	width: 12px;
 	margin-left: 1.2px;
 }
 
 .mCSB_scrollTools .mCSB_buttonDown {
-	background: rgba(0, 0, 0, 0) url("..img/arrow-down.png") no-repeat scroll center top;
+	background: rgba(0, 0, 0, 0) url("../img/arrow-down.png") no-repeat scroll center top;
 	height: 6px;
 	width: 12px;
 	margin-left: 1.2px;

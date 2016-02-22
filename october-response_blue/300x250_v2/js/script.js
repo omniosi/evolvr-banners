@@ -108,6 +108,8 @@ t1
 .to(s4, 0.5, {autoAlpha:1, ease:"easeInOutBack"})
 .to(s4t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.25")
 .from(s4box, 1, {css: {top:30,right:-150,opacity:0}, ease:"easeInOutBack"}, "-=1")
+.to(scroller, 1, {autoAlpha:1, ease:"easeInOutBack"})
+.to(footer, 1, {autoAlpha:1, ease:"easeInOutBack"}, "-=1")
 .to(s5, 0.5, {autoAlpha:1, ease:"easeInOutBack"}, "+=1")
 .to(s4t1, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "fourout")
 .to(s4t2, 0.5, {css: {opacity:0}, ease:"easeInOutBack"}, "fourout")
@@ -115,8 +117,7 @@ t1
 .to(s4box, 1, {top:-3, right:-4, scale:0.75, ease:"easeInOutBack"}, "fivein")
 .from(s5t1, 1, {top:"-=20", opacity:0, ease:"easeInOutBack"})
 .from(cta, 1, {autoAlpha:0,right:-200, ease:"easeInOutBack"})
-.to(scroller, 1, {autoAlpha:1, ease:"easeInOutBack"}, "+=1")
-.to(footer, 1, {autoAlpha:1, ease:"easeInOutBack"}, "-=1")
 .to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutBack"})
 ;
 // t1.seek("fourout");
+ISIscroll();
