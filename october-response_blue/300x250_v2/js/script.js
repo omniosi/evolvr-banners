@@ -76,7 +76,7 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 ,       pin6 = document.getElementsByClassName('pin6')[0]
 ,       pin7 = document.getElementsByClassName('pin7')[0]
 ,       pin8 = document.getElementsByClassName('pin8')[0]
-,       pin9 = document.getElementsByClassName('pin9')[0]
+// ,       pin9 = document.getElementsByClassName('pin9')[0]
 ,       pin10 = document.getElementsByClassName('pin10')[0]
 ;
 // Animations
@@ -102,7 +102,7 @@ t1
 .from(pin6,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin7,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin8,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
-.from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+// .from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin10,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .to(s3, 0.5, {autoAlpha:0, ease:"easeInOutBack"})
 .to(s4, 0.5, {autoAlpha:1, ease:"easeInOutBack"})
