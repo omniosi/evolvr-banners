@@ -83,47 +83,56 @@ img{
 	 background-size: cover;
 	display: inline-block;
 	transform-origin: center;
-	/*opacity:0;*/
 }
 .pin1{
 	left:13px;	 top:120px;
 	width: 77px; height: 120px;
+	opacity: 0.4
 }
 .pin2{
 	left:176px;	top:170px;
 	width: 31px; height: 49px;
+	opacity: 0.6
 }
 .pin3{
 	left:231px;	top:-25px;
 	width: 77px; height: 120px;
+	opacity: 0.4
 }
 .pin4{
 	left:110px;	top:150px;
 	width: 31px; height: 49px;
+	opacity: 0.6
 }
 .pin5{
 	left:-10px; top:30px;
 	width: 31px; height: 49px;
+	opacity: 0.6
 }
 .pin6{
 	left:40px;	 top:183px;
 	width: 31px; height: 49px;
+	opacity: 0.6
 }
 .pin7{
 	left:86px; top:-33px;
 	width: 77px; height: 120px;
+	opacity: 0.4
 }
 .pin8{
 	left:165px;	top:39px;
 	width: 52px; height: 81px;
+	opacity: 0.8
 }
 /*.pin9{
 	left:-16px; top:110px;
 	width: 52px; height: 81px;
+	opacity: 0.8
 }*/
 .pin10{
 	left:224px;	top:133px;
 	width: 52px; height: 81px;
+	opacity: 0.8
 }
 
 #btn_arrow,
@@ -496,31 +505,36 @@ z-index: 5;
 .clock2,
 .clock1{
 	position: absolute;
-	/*opacity: 0;*/
 }
 .clock1 {
 	right: 23px; bottom: -39px;
 	width: 132px; height: 132px;
+	opacity: 0.35
 }
 .clock2 {
 	width: 80px; height: 80px;
 	left: 37px; bottom: -18px;
+	opacity: 0.9
 }
 .clock3{
 	left: 8px;	bottom: 69px;
 	width: 45px; height: 45px;
+	opacity: 0.65
 }
 .clock4 {
 	right: 134px;	bottom: 130px;
 	width: 132px; height: 132px;
+	opacity: 0.4
 }
 .clock5 {
 	right: 77px;  top: 10px;
 	width: 45px; height: 45px;
+	opacity: 0.65
 }
 .clock6{
 	right: -9px;	top: 15px;
 	width: 80px; height: 80px;
+	opacity: 0.9
 }
 .clock6 .clock6bg,
 .clock5 .clock5bg,

@@ -105,7 +105,7 @@ t1
 // .from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin10,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .to(s3, 0.5, {autoAlpha:0, ease:"easeInOutBack"})
-.to(s4, 0.5, {autoAlpha:1, ease:"easeInOutBack"})
+.to(s4, 0.5, {autoAlpha:1, ease:"easeInOutBack"}, "fourin")
 .to(s4t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.25")
 .from(s4box, 1, {css: {top:30,right:-150,opacity:0}, ease:"easeInOutBack"}, "-=1")
 .to(scroller, 1, {autoAlpha:1, ease:"easeInOutBack"})
@@ -119,5 +119,6 @@ t1
 .from(cta, 1, {autoAlpha:0,right:-200, ease:"easeInOutBack"})
 .to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutBack"})
 ;
-// t1.seek("fourout");
 ISIscroll();
+t1.seek("fourin");
+// t1.seek("fourout");
