@@ -85,52 +85,52 @@ img{
 	transform-origin: center;
 }
 .pin1{
-	left:13px;	 top:120px;
+	left:13px;	 top:-45px;
 	width: 77px; height: 120px;
 	opacity: 0.4
 }
 .pin2{
-	left:176px;	top:170px;
+	left:176px; top:199px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin3{
-	left:231px;	top:-25px;
+	left:231px;	top:5px;
 	width: 77px; height: 120px;
 	opacity: 0.4
 }
 .pin4{
-	left:110px;	top:150px;
+	left:110px;	top:21px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin5{
-	left:-10px; top:30px;
+	left:-10px; top:52px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin6{
-	left:40px;	 top:183px;
+	left:40px;	 top:178px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin7{
-	left:86px; top:-33px;
+	left:86px; top:164px;
 	width: 77px; height: 120px;
 	opacity: 0.4
 }
 .pin8{
-	left:165px;	top:39px;
+	left:165px;	top:-19px;
 	width: 52px; height: 81px;
 	opacity: 0.8
 }
-/*.pin9{
-	left:-16px; top:110px;
+.pin9{
+	left:-16px; top:130px;
 	width: 52px; height: 81px;
 	opacity: 0.8
-}*/
+}
 .pin10{
-	left:224px;	top:133px;
+	left:224px;	top:153px;
 	width: 52px; height: 81px;
 	opacity: 0.8
 }
@@ -162,7 +162,7 @@ img{
 	width: 150px; height: 43px;
 }
 .txtbtn2{
-	opacity: 1;
+	/*opacity: 0;*/
 	top: 104px; right: 14px;
 	width: 137px; height: 29px;
 	z-index: 3;
@@ -507,7 +507,7 @@ z-index: 5;
 	position: absolute;
 }
 .clock1 {
-	right: 23px; bottom: -39px;
+	right: 20px; top: 170px;
 	width: 132px; height: 132px;
 	opacity: 0.35
 }
@@ -522,12 +522,12 @@ z-index: 5;
 	opacity: 0.65
 }
 .clock4 {
-	right: 134px;	bottom: 130px;
+	left: 16px; top: -63px;
 	width: 132px; height: 132px;
 	opacity: 0.4
 }
 .clock5 {
-	right: 77px;  top: 10px;
+	right: 87px;  top: 10px;
 	width: 45px; height: 45px;
 	opacity: 0.65
 }

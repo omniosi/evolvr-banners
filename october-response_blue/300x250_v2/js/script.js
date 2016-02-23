@@ -76,7 +76,7 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 ,       pin6 = document.getElementsByClassName('pin6')[0]
 ,       pin7 = document.getElementsByClassName('pin7')[0]
 ,       pin8 = document.getElementsByClassName('pin8')[0]
-// ,       pin9 = document.getElementsByClassName('pin9')[0]
+,       pin9 = document.getElementsByClassName('pin9')[0]
 ,       pin10 = document.getElementsByClassName('pin10')[0]
 ;
 // Animations
@@ -87,23 +87,23 @@ t1
 .to(s2t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.5")
 .from(clock1,0.5,{scale:0,ease:"easeInOutBack"})
 .from(clock4,0.5,{scale:0,ease:"easeInOutBack"})
-.from(clock6,0.5,{scale:0,ease:"easeInOutBack"})
+.from(clock6,0.5,{scale:0,ease:"easeInOutBack"}, "-=0.25")
 .from(clock3,0.5,{scale:0,ease:"easeInOutBack"})
-.from(clock2,0.5,{scale:0,ease:"easeInOutBack"})
+.from(clock2,0.5,{scale:0,ease:"easeInOutBack"}, "-=0.25")
 .from(clock5,0.5,{scale:0,ease:"easeInOutBack"})
 .to(s2, 1, {autoAlpha:0, ease:"easeInOutBack"},"cross")
 .to(s3, 1, {autoAlpha:1, ease:"easeInOutBack"},"cross")
 .from(s3t2, 1, {opacity:0, top:108, ease:"easeInOutBack"})
 .from(pin1,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
-.from(pin2,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin2,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=0.25")
 .from(pin3,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
-.from(pin4,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin4,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=0.25")
 .from(pin5,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin6,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
-.from(pin7,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin7,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=0.25")
 .from(pin8,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
-// .from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
-.from(pin10,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
+.from(pin10,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=0.25")
 .to(s3, 0.5, {autoAlpha:0, ease:"easeInOutBack"})
 .to(s4, 0.5, {autoAlpha:1, ease:"easeInOutBack"}, "fourin")
 .to(s4t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.25")
@@ -120,5 +120,5 @@ t1
 .to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutBack"})
 ;
 ISIscroll();
-t1.seek("fourin");
+// t1.seek("fourin");
 // t1.seek("fourout");
