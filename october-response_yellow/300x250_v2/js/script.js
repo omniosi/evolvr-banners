@@ -9,13 +9,17 @@ $(document).ready(function(){
 // ISI Scroll animation
 
 // Elements
-var f1_img1 = document.getElementById("f1_img1")
-// ,     f1_t1 = document.getElementById("f1_txt1")
+var f1_t1 = document.getElementById("f1_txt1")
 ,     f1_t2 = document.getElementById("f1_txt2")
-// ,     patient = document.getElementById("patient")
+,     f1_i1 = document.getElementById("patient")
 ;
 
 // Animation
 var t1 = new TimelineLite();
 
-t1.from( f1_t2, 1, {opacity: 0, ease:"easeInOutBack"});
+t1
+.from( f1_t1, 1, {left: 300, ease:"easeInOutBack"})
+.from( f1_t2, 1, {left: 300, ease:"easeInOutBack"},"-=0.5")
+.from( f1_i1, 0.5, {scale: 0, ease:"easeOutBack"})
+// .from( f1_t2, 1, {opacity: 0, ease:"easeInOutBack"})
+;

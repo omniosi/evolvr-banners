@@ -4,27 +4,11 @@
 html{ padding: 0;margin: 0;box-sizing: border-box; }
 *,*:before,*:after{ padding:inherit;margin: inherit;box-sizing: inherit; }
 
-:focus {
-    outline:none;
-}
-
-::-moz-focus-inner {
-    border:0;
-}
-
-.clear {
-    clear:both;
-}
-
-body{
-    background: #FFF;
-}
-
-img{
-    border: 0;
-}
-
-/* //////////// LOADER //////////////////*/
+:focus { outline:none; }
+::-moz-focus-inner { border:0; }
+.clear { clear:both; }
+body{ background: #FFF; }
+img{ border: 0; }
 
 #banner{
     position: relative;
@@ -32,6 +16,7 @@ img{
     height: 250px;
 }
 
+/* //////////// LOADER //////////////////*/
 
 #loader {
     position: absolute;
@@ -43,7 +28,6 @@ img{
     width: 150px;/*width of banner-2*/
     height: 125px;/*height of banner-2*/
 }
-
 .loading {
     position: absolute;
     width: 100%;
@@ -59,6 +43,7 @@ img{
     top: 0px;
     z-index: 1;
 }
+
 /* //////////// BANNER //////////////////*/
 
 #container {
@@ -67,9 +52,6 @@ img{
     left: 0; top: 0;
     overflow: hidden;
     border: 1px solid #999;
-}
-#bg {
-    width: 300px; height: 250px;
     background: url(../img/bg.jpg) no-repeat;
 }
 #patient,
