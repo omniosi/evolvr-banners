@@ -66,6 +66,7 @@ img{
 .screen4_txt2{
 	font-size: 26px;
 	left: 9px;	top: 30px;
+	opacity: 1
 }
 .screen5_txt1{
 	font-size: 18px;
@@ -178,6 +179,7 @@ img{
    left: -80px;
    top: 0;
    z-index: 1;
+   height: 40px
 }
 .txtbtnhover{
 	top: 102px; right: 4px;

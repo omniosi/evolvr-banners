@@ -27,7 +27,7 @@ var f1_t1 = document.getElementById("f1_txt1")
 ,     f5_i1 = document.getElementById("f5_pen")
 ,     f5_i2 = document.getElementById("logo")
 ,     f5_i3 = document.getElementById("f5_btn")
-,     f5_shine = document.getElementById("shine")
+,     shine = document.getElementById("shine")
 ;
 
 // Animation
@@ -72,4 +72,6 @@ t1
 .from( f5_i2, 1, {left:300, ease:"easeInOutBack"},"-=2")
 .from( f5_i3, 0.5, {left:300, ease:"easeInOutExpo"},"-=0.5")
 // .from( f5_i3, 0.5, {left:300, ease:Back.easeInOut.config(0.5)},"-=0.5")
+.to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutExpo"})
+
 ;
