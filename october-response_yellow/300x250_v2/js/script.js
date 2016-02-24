@@ -14,6 +14,11 @@ var f1_t1 = document.getElementById("f1_txt1")
 ,     f1_i1 = document.getElementById("patient")
 ,     f2_t1 = document.getElementById("f2_txt1")
 ,     f2_i1 = document.getElementById("f2_img1")
+,     f2_i2 = document.getElementById("heart_sign")
+,     f3_t1 = document.getElementById("f3_txt1")
+,     f3_i1 = document.getElementById("f3_img1")
+,     f3_i2 = document.getElementById("white_patch")
+,     f3_i3 = document.getElementById("cross_sign")
 ;
 
 // Animation
@@ -29,4 +34,6 @@ t1
 .to( f2_t1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=1")
 .to( f2_i1, 1, {scale:1,left:175,top:26, ease:"easeInOutBack"},"-=1")
 .to( f1_i1, 1, {scale:0.5,left:270,top:80, ease:"easeInOutBack"},"-=1")
+.to( f2_i2, 1, {opacity:1, ease:"easeInOutBack"})
+.to( f3_i1, 1, {scale:0.5,left:120,top:-58, ease:"easeInOutBack"})
 ;
