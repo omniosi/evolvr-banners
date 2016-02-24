@@ -68,7 +68,7 @@ img{ border: 0; }
 }
 #isi_img{
     left: 9px; top: 150px;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 #footer_container{
     /*opacity: 0;*/
@@ -160,42 +160,31 @@ img{ border: 0; }
 }
 
 
-#logo{
+#shine,
+#f5_btn,
+#logo,
+#f5_pen{
     position: absolute;
-    top: 0px;
-    left: 0px;
     opacity: 0;
+    visibility: hidden;
 }
-
+#f5_pen{
+    left: 204px; top: 6px;
+    transform: scale(0.6);
+}
+#logo{
+    left: 0px; top: 0px;
+}
 #shine{
-    position: absolute;
-    top: 69px;
-    left: -50px;
-    opacity: 0;
-    display: none;
+    left: -50px; top: 69px;
     z-index: 3;
 }
-
-
 #f5_btn{
-    position: absolute;
-    top: 69px;
-    left: -50px;
-    opacity: 0;
-    display: none;
+    left: 80px; top: 69px;
     cursor: pointer;
     z-index: 2;
 }
 
-
-
-#f5_pen{
-    position: absolute;
-    top: -51px;
-    left: 10px;
-    opacity: 0;
-    display: none;
-}
 
 h3,strong { font-weight: bold; }
 /*///////////////////////////////////////// Scroll /////////////////////////////////////*/
@@ -447,18 +436,20 @@ h3,strong { font-weight: 700; }
 }
 
 /*Updated scroll css*/
-			.mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover, .mCSB_scrollTools .mCSB_buttonUp:hover
-			{
-				opacity:1;
-			}
+.mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover, .mCSB_scrollTools .mCSB_buttonUp:hover
+{
+	opacity:1;
+}
 
-			.mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp
-			{
-				opacity:1;
-			}
+.mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp
+{
+	opacity:1;
+}
 
-			#mCSB_1_scrollbar_vertical
-			{
-				z-index:2;
-				margin-right: 5px;
-			}
+#mCSB_1_scrollbar_vertical
+{
+	z-index:2;
+	margin-right: 5px;
+        padding: 0;
+
+}
