@@ -54,44 +54,35 @@ img{ border: 0; }
     border: 1px solid #999;
     background: url(../img/bg.jpg) no-repeat;
 }
-#f3_txt1,
-#f3_img1,
 #heart_sign,
+#f3_txt1,
 #f2_txt1,
-#f2_img1,
-#patient,
 #f1_txt2,
 #f1_txt1,
-#f1_img1,
 #isi_img{
     position: absolute;
 }
 #isi_img{
     left: 9px; top: 150px;
-    /*opacity: 0;*/
 }
-#footer_container{
-    /*opacity: 0;*/
-}
+#f3_img1,
+#f2_img1,
 #f1_img1{
-    right: 26px; top: 26px;
-    /*opacity: 0;*/
+    position: absolute;
+    /*left: 152px; top: -35px;*/
+    left: 92px; top: -95px;
+    /*width: 62px; height: 62px;*/
+    width: 100px; height: 100px;
+    /*transform: matrix(0.6,0,0,0.6,0,0);*/
+    transform: matrix(0.4,0,0,0.4,0,0);
 }
+#f1_img1{ z-index: 10 }
 #f1_txt1{
     left: 13px; top: 43px;
-    /*opacity: 0;*/
 }
 #f1_txt2{
     left: 13px; top: 88px;
-    opacity: 1;
-}
-#patient{
-    right: 26px; top: 26px;
-    z-index: 1;
-}
-#f3_img1,
-#f2_img1{
-    left: 150px; top: -150px;
+    opacity: 0
 }
 #f2_txt1{
     left: 13px; top: 88px;
