@@ -118,10 +118,6 @@ img{ border: 0; }
 }
 
 #f4_img1{
-    position: absolute;
-    top: -100px;
-    right: 100px;
-    opacity: 0;
     background: url(../img/green_patch.png) no-repeat;
 }
 
@@ -139,18 +135,10 @@ img{ border: 0; }
     opacity: 0;
 }
 
-#green_patch{
-    position: absolute;
-    top: 26px;
-    right: 26px;
-    display: none;
-}
-
 #epipen_pack{
     position: absolute;
-    top: 33px;
-    right: 37px;
-    display: none;
+    left: 10px; top: 8px;
+    width: 79px; height: 81px;
 }
 
 
@@ -163,7 +151,7 @@ img{ border: 0; }
     visibility: hidden;
 }
 #f5_pen{
-    left: 204px; top: 6px;
+    left: 193px; top: 3px;
     transform: scale(0.6);
 }
 #logo{
