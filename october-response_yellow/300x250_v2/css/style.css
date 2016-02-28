@@ -65,6 +65,8 @@ img{ border: 0; }
 #isi_img{
     left: 9px; top: 150px;
 }
+#f5_img1,
+#f4_img1,
 #f3_img1,
 #f2_img1,
 #f1_img1{
@@ -120,6 +122,7 @@ img{ border: 0; }
     top: -100px;
     right: 100px;
     opacity: 0;
+    background: url(../img/green_patch.png) no-repeat;
 }
 
 #f4_txt1{

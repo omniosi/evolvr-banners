@@ -36,18 +36,12 @@ var f1 = document.getElementById("frame1")
 
 // Animation
 var tll1 = new TimelineLite();
-// var l1 = 152
-// ,		t1 = "-35"
-var l1 = 132
-,		t1 = "-55"
-// ,		l2 = 172
-// ,		t2 = 27
-,		l2 = 170
-,		t2 = 22
-// ,		l3 = 270
-// ,		t3 = 80
-,		l3 = 250
-,		t3 = 60 // position minus half the size transform difference
+var l1 = 132 // position (152) minus half the size transform difference (20)
+,		t1 = "-55" // position ("-35") minus half the size transform difference (20)
+,		l2 = 172
+,		t2 = 23 //position (27) adjustment to center middle icon
+,		l3 = 250 // position (270) minus half the size transform difference (20)
+,		t3 = 60 // position (80) minus half the size transform difference (20)
 ,		l4 = 320
 ,		t4 = 120
 ,		l0 = 92
@@ -93,7 +87,7 @@ tll1
 .to( f4_t1, 0.5, {autoAlpha:0, ease:"easeInOutBack"},"-=1.5")
 .to( f4_t2, 0.5, {autoAlpha:0, ease:"easeInOutBack"},"-=1.5")
 .to( f5_i2, 0.5, {autoAlpha:1})
-.to( f5_i3, 0.5, {autoAlpha:1})
+.to( f5_i3, 0.5, {autoAlpha:1},"-=0.5")
 .from( f5_i2, 1, {left:300, ease:"easeInOutBack"},"-=2")
 .from( f5_i3, 0.5, {left:300, ease:"easeInOutExpo"},"-=0.5")
 .to(shine, 2, {css: {opacity:1, left:250}, ease:"easeInOutExpo"})
