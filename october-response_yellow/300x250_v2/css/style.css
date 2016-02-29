@@ -100,21 +100,15 @@ img{ border: 0; }
     left: 13px;
     opacity: 0;
 }
-
+#cross_sign,
 #white_patch{
     position: absolute;
-    top: 35px;
-    right: 70px;
-    display: none;
 }
-
-
+#white_patch{
+    left: 42px; top: 10px;
+}
 #cross_sign{
-    position: absolute;
-    top: 33px;
-    right: 69px;
-    display: none;
-    opacity: 0;
+    left: 42px; top: 10px;
 }
 
 #f4_img1{
