@@ -79,6 +79,10 @@ img{ border: 0; }
     transform: matrix(0.4,0,0,0.4,0,0);
 }
 #f1_img1{ z-index: 10 }
+#pArm{
+    position: absolute;
+    left: 58px; top: 8px
+}
 #f1_txt1{
     left: 13px; top: 43px;
 }
@@ -136,7 +140,6 @@ img{ border: 0; }
 }
 
 
-#shine,
 #f5_btn,
 #logo,
 #f5_pen{
@@ -151,15 +154,17 @@ img{ border: 0; }
 #logo{
     left: 0px; top: 0px;
 }
-#shine{
-    left: -250px; top: 0px;
-    z-index: 3;
-    height: 70px;
-}
 #f5_btn{
     left: 80px; top: 69px;
     cursor: pointer;
     z-index: 2;
+    overflow: hidden;
+}
+#shine{
+    position: absolute;
+    left: -250px; top: 0px;
+    z-index: 3;
+    height: 70px;
 }
 
 
