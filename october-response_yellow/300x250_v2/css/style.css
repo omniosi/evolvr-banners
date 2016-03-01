@@ -94,8 +94,12 @@ img{ border: 0; }
     left: 13px; top: 88px;
     opacity: 0;
 }
+#f2_img1 #cover{
+    position: absolute;
+    left: 62px; top: 70px;
+}
 #heart_sign{
-    left: 58px; top: 69px;
+    left: 52px; top: 72px;
 }
 #f3_txt1{
     position: absolute;
@@ -111,7 +115,7 @@ img{ border: 0; }
     left: 42px; top: 10px;
 }
 #cross_sign{
-    left: 42px; top: 10px;
+    left: 40px; top: 10px;
     transform: matrix(0.5,0,0,0.5,0,0)
 }
 
