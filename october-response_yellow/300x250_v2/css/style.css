@@ -115,7 +115,7 @@ img{ border: 0; }
     left: 42px; top: 10px;
 }
 #cross_sign{
-    left: 40px; top: 10px;
+    left: 41px; top: 10px;
     transform: matrix(0.5,0,0,0.5,0,0)
 }
 
