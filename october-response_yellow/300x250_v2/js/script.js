@@ -60,7 +60,7 @@ tll1
 .to( arm, 0.5, {rotation:"-=30",transformOrigin:"45% bottom",ease:Back.easeOut.config(0.8)})
 .to( arm, 0.5, {rotation:"+=30",transformOrigin:"45% bottom",ease:Back.easeOut.config(0.8)})
 .to( arm, 0.5, {rotation:"-=30",transformOrigin:"45% bottom",ease:Back.easeOut.config(0.8)})
-.to( f1_t2, 0.5, {top: "-=20",autoAlpha:0, ease:"easeInOutBack"},"+=1")
+.to( f1_t2, 0.5, {top: "-=20",autoAlpha:0, ease:"easeInOutBack"})
 .from( f2_t1, 1, {top: "-=20", ease:"easeInOutBack"})
 .to( f2_t1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=1")
 .to( f2_i1, 1, {scale:1,opacity:1, left:l2, top:t2, ease:Back.easeOut.config(0.8)},"-=1")
