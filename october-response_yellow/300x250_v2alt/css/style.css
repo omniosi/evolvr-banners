@@ -122,18 +122,15 @@ img{ border: 0; }
 #cross_sign{
     left: 41px; top: 10px;
 }
-
 #f4_img1{
     background: url(../img/green_patch.png) no-repeat;
 }
-
 #f4_txt1{
     position: absolute;
     top: 33px;
     left: 11px;
     opacity: 0;
 }
-
 #f4_txt2{
     position: absolute;
     top: 58px;
@@ -174,12 +171,6 @@ img{ border: 0; }
 
 h3,strong { font-weight: bold; }
 /*///////////////////////////////////////// Scroll /////////////////////////////////////*/
-.scrollBlock {
-    height: 50px;
-    top: 175px;
-    z-index: 4;
-    width: 298px;
-}
 
 .scrollBlock,
 .smallText {
@@ -188,11 +179,20 @@ h3,strong { font-weight: bold; }
     /*-moz-box-shadow: inset 0 -3px 3px -3px #000;
     -webkit-box-shadow: inset 0 -3px 3px -3px #000*/
 }
+.scrollBlock {
+    height: 50px;
+    top: 175px;
+    z-index: 4;
+    /*width: 298px;*/
+    width: 285px;
+    left: 10px;
+    line-height: 1.1;
+}
 .scrollInner {
     height: 50px
 }
 .mCustomScrollBox {
-    padding: 0 10px
+    /*padding: 0 10px*/
 }
 .smallText {
     background: 0 0;
@@ -237,7 +237,8 @@ h3,strong { font-weight: bold; }
 }
 .scrollBlock p {
     margin: 0 0 8px;
-    padding: 0
+    padding: 0;
+    /*width: 261px*/
 }
 .scrollBlock div {
     margin: 0
