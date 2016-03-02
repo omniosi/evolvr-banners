@@ -75,17 +75,13 @@ img{ border: 0; }
     left: 92px; top: -95px;
     /*width: 62px; height: 62px;*/
     width: 100px; height: 100px;
-    /*transform: matrix(0.6,0,0,0.6,0,0);*/
-    transform: matrix(0.4,0,0,0.4,0,0);
 }
 #f1_img1{
     z-index: 10;
     left:172px;top:23px;
-    transform: matrix(1,0,0,1,0,0);
 }
 #f2_img1{
     left:132px;top:-55px;
-    transform: matrix(0.6,0,0,0.6,0,0);
     opacity: 0.6;
 }
 #pArm{
@@ -125,7 +121,6 @@ img{ border: 0; }
 }
 #cross_sign{
     left: 41px; top: 10px;
-    transform: matrix(0.5,0,0,0.5,0,0)
 }
 
 #f4_img1{
@@ -145,14 +140,11 @@ img{ border: 0; }
     left: 11px;
     opacity: 0;
 }
-
 #epipen_pack{
     position: absolute;
     left: 10px; top: 8px;
     width: 79px; height: 81px;
 }
-
-
 #f5_btn,
 #logo,
 #f5_pen{
@@ -162,7 +154,6 @@ img{ border: 0; }
 }
 #f5_pen{
     left: 193px; top: 3px;
-    transform: scale(0.6);
 }
 #logo{
     left: 0px; top: 0px;

@@ -50,6 +50,11 @@ var l1 = 132 // position (152) minus half the size transform difference (20)
 ;
 
 tll1
+// .set(f1_i1,{scale:0.4})
+.set(f2_i1,{scale:0.4})
+.set(f3_i1,{scale:0.4})
+.set(f4_i1,{scale:0.4})
+.set(f5_pen,{scale:0.6})
 .from( f1, 0.5, {autoAlpha: 0, ease:"easeInOutBack"})
 // .to( f1_i1, 0.5, {scale:0.6,opacity:o1, left:l1, top:t1, ease:Back.easeOut.config(0.8)},"-=0.5")
 .from( f1_t2, 1, {top: "-=20", ease:"easeInOutBack"})
@@ -64,6 +69,7 @@ tll1
 .from( f2_t1, 1, {top: "-=20", ease:"easeInOutBack"})
 .to( f2_t1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=1")
 .to( f2_i1, 1, {scale:1,opacity:1, left:l2, top:t2, ease:Back.easeOut.config(0.8)},"-=1")
+.to( f4_i1, 1, {scale:0.4,opacity:o2,left:l0,top:t0, ease:Back.easeOut.config(0.8)},"-=1")
 .to( f1_i1, 1, {scale:0.6,opacity:o1,left:l3,top:t3, ease:Back.easeOut.config(0.8)},"-=1")
 .to( f3_i1, 1, {scale:0.6,opacity:o1,left:l1,top:t1, ease:Back.easeOut.config(0.8)},"-=1")
 .to( heart, 0.5, {scale:1.0,ease:Back.easeOut.config(0.8)},"-=1")

@@ -50,6 +50,10 @@ var l1 = 132 // position (152) minus half the size transform difference (20)
 ;
 
 tll1
+.set(f2_i1,{scale:0.4})
+.set(f3_i1,{scale:0.4})
+.set(f4_i1,{scale:0.4})
+.set(f5_pen,{scale:0.6})
 .from( f1, 0.5, {autoAlpha: 0, ease:"easeInOutBack"})
 .to( f1_i1, 0.5, {scale:0.6,opacity:o1, left:l1, top:t1, ease:Back.easeOut.config(0.8)},"-=0.5")
 .from( f1_t2, 1, {top: "-=20", ease:"easeInOutBack"})
