@@ -1,19 +1,15 @@
 html{padding:0;margin: 0;box-sizing: border-box;	}
 *,*:before,*:after{padding:inherit;margin:inherit;box-sizing: inherit}
+img{ max-width: 100%; border: none; }
 
 #banner-wrapper{
 	position: absolute;
-	width:300px;
-	height:250px;
+	width:160px;
+	height:600px;
 	border: 1px solid #999;
 	background: #00539b url('../img/bg.jpg') no-repeat;
 	z-index:1;
 	overflow: hidden;
-}
-
-img{
-	max-width: 100%;
-	border: none;
 }
 
 .screen5,
@@ -79,11 +75,7 @@ img{
 }
 .pin10,.pin9,.pin8,.pin7,.pin6,.pin5,.pin4,.pin3,.pin2,.pin1{
 	position:absolute;
-	background: url(../img/navigation_pin.png) no-repeat;
-	-webkit-background-size: cover;
-	 background-size: cover;
-	display: inline-block;
-	transform-origin: center;
+	background: url(../img/navigation_pin.png) no-repeat 0 0 / cover;
 }
 .pin1{
 	left:13px;	 top:-45px;
@@ -515,33 +507,38 @@ z-index: 5;
 	position: absolute;
 }
 .clock1 {
-	right: 20px; top: 170px;
+	right: -49px; bottom: 95px;
 	width: 132px; height: 132px;
 	opacity: 0.35
 }
 .clock2 {
+	left: 70px; bottom: -15px;
 	width: 80px; height: 80px;
-	left: 37px; bottom: -18px;
 	opacity: 0.9
 }
 .clock3{
-	left: 8px;	bottom: 69px;
+	left: 17px;	bottom: 64px;
 	width: 45px; height: 45px;
 	opacity: 0.65
 }
 .clock4 {
-	left: 16px; top: -63px;
-	width: 132px; height: 132px;
-	opacity: 0.4
-}
-.clock5 {
-	right: 87px;  top: 10px;
+	right: 106px; top: 176px;
 	width: 45px; height: 45px;
 	opacity: 0.65
 }
-.clock6{
-	right: -9px;	top: 15px;
+.clock5 {
+	left: -18px;  top: 147px;
 	width: 80px; height: 80px;
+	opacity: 0.9
+}
+.clock6{
+	left: 51px; top: 61px;
+	width: 132px; height: 132px;
+	opacity: 0.4
+}
+.clock7{
+	left: -15px; top: 6px;
+	width: 132px; height: 132px;
 	opacity: 0.9
 }
 .clock6 .clock6bg,
@@ -551,31 +548,28 @@ z-index: 5;
 .clock2 .clock2bg,
 .clock1 .clock1bg{
 	position: absolute;
-	/*background: url(../img/clock.png) no-repeat;*/
 	background: url(../img/clock.png) no-repeat 0 0 / cover ;
+	left: 0; top: 0;
 }
 .clock1 .clock1bg{
-	left: 0; top: 0;
 	width: 132px; height: 132px;
 }
 .clock2 .clock2bg{
-	left: 0; top: 0;
 	width: 80px; height: 80px;
 }
 .clock3 .clock3bg{
-	left: 0; top: 0;
 	width: 45px; height: 45px;
 }
 .clock4 .clock4bg{
-	left: 0; top: 0;
-	width: 132px; height: 132px;
+	width: 45px; height: 45px;
 }
 .clock5 .clock5bg{
-	left: 0; top: 0;
 	width: 45px; height: 45px;
 }
 .clock6 .clock6bg{
-	left: 0; top: 0;
+	width: 132px; height: 132px;
+}
+.clock7 .clock7bg{
 	width: 80px; height: 80px;
 }
 
