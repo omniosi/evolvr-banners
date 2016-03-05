@@ -35,42 +35,36 @@ img{ max-width: 100%; border: none; }
 	text-align: center;
 	opacity: 0;
 }
+.screen3_txt1,
 .screen2_txt1{
 	opacity: 1;
-	font-size: 19px;
-	left: 20px; top: 77px;
+	font-size: 17px;
+	left: 0px; top: 232px;
 }
+.screen3_txt2,
 .screen2_txt2{
-	font-size: 36px;
-	left: 78px; top: 128px;
-}
-.screen3_txt1{
-	opacity: 1;
-	font-size: 19px;
-	left: 20px; top: 77px;
+	font-size: 32px;
+	left: 17px; top: 309px;
 }
 .screen3_txt2{
-	font-size: 36px;
-	left: 68px; top: 128px;
+	left: 4px;
 	opacity:1;
 }
 .screen4_txt1{
 	opacity: 1;
 	font-size: 19px;
-	left: 10px; top: 8px;
+	left: 8px; top: 88px;
 }
 .screen4_txt2{
 	font-size: 26px;
-	left: 9px;	top: 30px;
+	left: 6px;	top: 109px;
 	opacity: 1
 }
 .screen5_txt1{
 	font-size: 18px;
 	font-family: "Roboto",sans-serif;
-	left: 18px; top: 65px;
-	text-align: left;
-	width: 156px;
-	line-height: 22px;
+	left: 0px; top: 112px;
+	line-height: 21px;
 	opacity: 1;
 }
 .pin10,.pin9,.pin8,.pin7,.pin6,.pin5,.pin4,.pin3,.pin2,.pin1{
@@ -78,52 +72,52 @@ img{ max-width: 100%; border: none; }
 	background: url(../img/navigation_pin.png) no-repeat 0 0 / cover;
 }
 .pin1{
-	left:13px;	 top:-45px;
+	left:6px;	 top:-5px;
 	width: 77px; height: 120px;
 	opacity: 0.4
 }
 .pin2{
-	left:176px; top:199px;
+	left:105px; top:31px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin3{
-	left:231px;	top:5px;
+	left:18px;	top:501px;
 	width: 77px; height: 120px;
 	opacity: 0.4
 }
 .pin4{
-	left:110px;	top:21px;
+	left:76px;	top:160px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin5{
-	left:-10px; top:52px;
+	left:90px; top:480px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin6{
-	left:40px;	 top:178px;
+	left:112px; bottom:-12px;
 	width: 31px; height: 49px;
 	opacity: 0.6
 }
 .pin7{
-	left:86px; top:164px;
+	left:-19px; bottom:121px;
 	width: 77px; height: 120px;
 	opacity: 0.4
 }
 .pin8{
-	left:165px;	top:-19px;
+	left:119px;	top:102px;
 	width: 52px; height: 81px;
 	opacity: 0.8
 }
 .pin9{
-	left:-16px; top:130px;
+	left:-7px; top:126px;
 	width: 52px; height: 81px;
 	opacity: 0.8
 }
 .pin10{
-	left:224px;	top:153px;
+	left:97px;	 bottom: 150px;
 	width: 52px; height: 81px;
 	opacity: 0.8
 }
@@ -136,12 +130,12 @@ img{ max-width: 100%; border: none; }
 	/*opacity:0;*/
 }
 .box{
-	right: 43px; top: 67px;
-	width: 215px; height: 92px;
+	right: 17px; top: 196px;
+	width: 123px; height: 112px;
 }
 .logo{
-	width: 162px; height: 43px;
-	left: 70px;  top: 80px;
+	/*width: 162px; height: 43px;*/
+	left: 8px;  top: 13px;
 }
 #btn_txt{	left: 16px; top: 8.5px; }
 #btn_arrow{ left: 117px; top: 5px; }
@@ -157,16 +151,20 @@ img{ max-width: 100%; border: none; }
 	margin-right: auto;
 }
 .txtbtn{
-	top: 85px; right: -150px;
-	width: 150px; height: 43px;
+	right: 10px; top: 309px;
+	width: 137px; height: 29px;
+	z-index: 3;
+	overflow: hidden;
+	border-radius: 5px;
+	/*opacity: 1*/
 }
-.txtbtn2{
+/*.txtbtn2{
 	top: 85px; right: 14px;
 	width: 96px; height: 40px;
 	z-index: 3;
 	overflow: hidden;
 	border-radius: 5px;
-}
+}*/
 .shine{
    left: -80px;
    top: 0;
@@ -182,19 +180,20 @@ img{ max-width: 100%; border: none; }
 /*///////////////////////////////////////// Scroll /////////////////////////////////////*/
 .scrollBlock{
 	visibility: hidden;
-	height: 85px;
+	height: 210px;
 	position: absolute;
 	left:0;
-	bottom:20px;
+	bottom:35px;
 	z-index: 6;
-    font-family: "Roboto",sans-serif;
+   font-family: "Roboto",sans-serif;
 	font-weight: normal;
-    font-style: normal;
+   font-style: normal;
 	overflow:hidden;
-	width: 300px;
+	width: 160px;
 }
 .scrollInner{
-	height:85px;
+	height:158px;
+	width: 146px;
 }
 .mCustomScrollBox{
 	padding: 0 15px 0 10px;
@@ -261,15 +260,15 @@ font-style: normal;
 .footer{
 	visibility: hidden;
 	text-align: left;
-   height: 18px;
-   font-size: 11px;
+   height: 35px;
+   font-size: 10px;
    font-weight: normal;
    background-color: #fff;
    font-family: "Roboto",sans-serif;
    font-style: normal;
 	position: absolute;
 	bottom: 0px;
-	width: 298px;
+	width: 160px;
 }
 
 .footer a, .scrollBlock a{
@@ -280,6 +279,7 @@ font-style: normal;
 	display: block;
 	width:100%;
 	height: 100%;
+	height: 600px;
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
@@ -415,11 +415,10 @@ z-index: 5;
 
 .mCSB_scrollTools {
     bottom: 0;
-    height: 57px;
+    height: 152px;
     left: auto;
     position: absolute;
-    right: 4px;
-    top: 2px;
+    right: 3px; top: 3px;
     width: 14px;
 }
 
@@ -457,7 +456,7 @@ z-index: 5;
 }
 .mCSB_scrollTools .mCSB_draggerContainer {
     bottom: 0;
-    height: 44px;
+    height: 137px;
     left: 0;
     position: absolute;
     right: 0;
@@ -498,6 +497,7 @@ z-index: 5;
 
 /*************  Animation  **************/
 
+.clock7,
 .clock6,
 .clock5,
 .clock4,
@@ -527,7 +527,7 @@ z-index: 5;
 	opacity: 0.65
 }
 .clock5 {
-	left: -18px;  top: 147px;
+	left: -18px;  bottom: 147px;
 	width: 80px; height: 80px;
 	opacity: 0.9
 }
@@ -538,9 +538,10 @@ z-index: 5;
 }
 .clock7{
 	left: -15px; top: 6px;
-	width: 132px; height: 132px;
+	width: 80px; height: 80px;
 	opacity: 0.9
 }
+.clock7 .clock7bg,
 .clock6 .clock6bg,
 .clock5 .clock5bg,
 .clock4 .clock4bg,
@@ -765,8 +766,8 @@ z-index: 5;
 }
 
 .clock4h, .clock4m {
-    height: 132px;
-    width: 132px;
+    height: 45px;
+    width: 45px;
     position: absolute;
 	opacity: 0.2;
 }
@@ -898,6 +899,54 @@ z-index: 5;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 	-webkit-animation-name: spinnerRotate6;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate6;
+    -moz-animation-duration: 39s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate2;
+    -ms-animation-duration: 25s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
+}
+
+.clock7h, .clock7m {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+	opacity: 0.2;
+}
+@-webkit-keyframes spinnerRotate7
+{
+    from{-webkit-transform:rotate(-100deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate7
+{
+    from{-moz-transform:rotate(-100deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate7
+{
+    from{-ms-transform:rotate(-100deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+@keyframes spinnerRotate7
+{
+    from{transform:rotate(-100deg);}
+    to{transform:rotate(360deg);}
+}
+.clock7h
+{
+	animation-name: spinnerRotate7;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	-webkit-animation-name: spinnerRotate7;
     -webkit-animation-duration: 25s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -1205,6 +1254,48 @@ z-index: 5;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotatem6;
+    -ms-animation-duration: 17s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
+}
+@-webkit-keyframes spinnerRotatem7
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotatem7
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotatem7
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+@keyframes spinnerRotatem7
+{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+.clock7m{
+    position: absolute;
+    top: 0;
+    left:0%;
+	animation-name: spinnerRotatem7;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spinnerRotatem7;
+    -webkit-animation-duration: 17s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotatem7;
+    -moz-animation-duration: 17s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotatem7;
     -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
