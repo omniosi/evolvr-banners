@@ -38,13 +38,13 @@ img{ max-width: 100%; border: none; }
 .screen3_txt1,
 .screen2_txt1{
 	opacity: 1;
-	font-size: 17px;
-	left: 0px; top: 232px;
+	font-size: 19px;
+	left: 20px; top: 232px;
 }
 .screen3_txt2,
 .screen2_txt2{
-	font-size: 32px;
-	left: 17px; top: 309px;
+	font-size: 39px;
+	left: 73px; top: 309px;
 }
 .screen3_txt2{
 	left: 4px;
