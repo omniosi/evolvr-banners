@@ -1,436 +1,202 @@
-.screen3, .screen4, .screen5{ display: none;}
+html{padding:0;margin: 0;box-sizing: border-box;	}
+*,*:before,*:after{padding:inherit;margin:inherit;box-sizing: inherit}
+img{ max-width: 100%; border: none; }
 
-
-/*font-family: 'Raleway', sans-serif;*/
-
-html, body{
-	padding:0;
-	margin: 0;
-}
-
-
-#loader {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #666;
-    top: 0;
-    left: 0;
-    width: 150px;/*width of banner-2*/
-    height: 125px;/*height of banner-2*/
-}
-
-.loading {
-    position: absolute;
-    width: 100%;    
-    top: 116px;
-    text-align: center;
-    left: 78px;
-}
-
-
-
-.frame1-img{
-	position:relative;
-	margin-top:65px;
-}
-
-/*.scroll-content-title{
-	padding: 0px 10px 0px 6px;
-}*/
-
-
-.frame1-img-drop1{
-	position:absolute;
-	top:-30px;
-	left: 140px;
-}
-
-.frame1-img-drop2{
-	position:absolute;
-	top:-30px;
-	left: 150px;
-}
-
-.frame1-img-drop3{
-	position:absolute;
-	top:-30px;
-	left: 140px;
-
-}
-
-.frame1-img-drop4{
-	position:absolute;
-	top:-30px;
-	left: 150px;
-}
-
-
-.wrapper{
-	width:158px;
-	height:598px;
+#banner-wrapper{
+	position: absolute;
+	width:300px;
+	height:600px;
 	border: 1px solid #999;
-	background: #00539b url('bg.jpg') no-repeat top left;
+	background: #00539b url('../img/bg.jpg') no-repeat;
 	z-index:1;
-}
-
-.main{
-	position: relative;
-	width:100%;
-	height: 598px;
 	overflow: hidden;
 }
 
-.loader_wrapper{
-	position: relative;
-	width:100%;
-	opacity:0;
-}
-
-img{
-	max-width: 100%;
-	border: none;
-}
-
-.screen1{
-	opacity: 0;
-	color: #fff;
-	font-size: 17.38px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	position: absolute;
-	top: 232px;
-	left: 0px;
-	text-align: center;
-}
-
+.screen5,
+.screen4,
+.screen3,
 .screen2{
-	height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-	/*display: none;*/
-	opacity:0;
+   position: absolute;
+   left: 0; top: 0;
+   width: 100%; height: 100%;
+   visibility: hidden;
 }
-
+.screen5_txt1,
+.screen4_txt2,
+.screen4_txt1,
+.screen3_txt2,
+.screen3_txt1,
+.screen2_txt2,
 .screen2_txt1{
-	opacity: 0;
 	color: #fff;
-	font-size: 19px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
-	text-align: center;
 	position: absolute;
-	top: 77px;
-	left: 20px;
+	text-align: center;
+	opacity: 0;
 }
-
+.screen3_txt1,
+.screen2_txt1{
+	opacity: 1;
+	font-size: 17px;
+	left: 0px; top: 232px;
+}
+.screen3_txt2,
 .screen2_txt2{
-	opacity: 0;
-	color: #fff;
 	font-size: 32px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	position: absolute;
-	top: 309px;
-	left: 17px;
-	text-align: center;
+	left: 17px; top: 309px;
 }
-
-.screen3{
-	height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-	/*opacity:0;*/
-	display: none;
-	/*background: url(bg_screen3.jpg) no-repeat 0 0 / cover ; width: 300px; height: 250px;*/
-}
-
-
-.pin1
-{
-	position:absolute;
-	top:-100px;
-	left:6px;
-	opacity:0;	
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 77px; height: 120px;
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin2
-{
-	position:absolute;
-	top:-100px;
-	left:105px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 31px; height: 49px;
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin3
-{
-	position:absolute;
-	top:350px;
-	left:18px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 52px; height: 81px;	
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin4
-{
-	position:absolute;
-	top:60px;
-	left:76px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 31px; height: 49px;	
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin5
-{
-	position:absolute;
-	top:380px;
-	left:90px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 31px; height: 49px;
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin6
-{
-	position:absolute;
-	bottom:53px;
-	left:112px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 31px; height: 49px;
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin7
-{
-	position:absolute;
-	bottom:155px;
-	left:-19px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 77px; height: 120px;	
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin8
-{
-	position:absolute;
-	top:0px;
-	left:119px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 52px; height: 81px;
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin9
-{
-	position:absolute;
-	top:110px;
-	left:-7px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 52px; height: 81px;	
-	display: inline-block;
-	transform-origin: center;
-}
-
-.pin10
-{
-	position:absolute;
-	bottom:181px;
-	left:97px;
-	opacity:0;
-	background: url(navigation_pin.png) no-repeat 0 0 / cover ; width: 52px; height: 81px;
-	display: inline-block;
-	transform-origin: center;
-}
-
-.screen3_txt1{
-	opacity: 0;
-	color: #fff;
-	font-size: 19px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	text-align: center;
-	position: absolute;
-	top: 77px;
-	left: 20px;
-}
-
 .screen3_txt2{
-	opacity: 0;
-	color: #fff;
-	font-size: 32px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	position: absolute;
-	top: 309px;
 	left: 4px;
-	text-align: center;
+	opacity:1;
 }
-
-.screen4{
-	height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-	/*opacity:0;*/
-	display: none;
-	/*background: url(bg_screen3.jpg) no-repeat 0 0 / cover ; width: 300px; height: 250px;*/
-}
-
 .screen4_txt1{
-	opacity: 0;
-	color: #fff;
+	opacity: 1;
 	font-size: 19px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	text-align: center;
-	position: absolute;
-	top: 88px;
-	left: 8px;
+	left: 8px; top: 88px;
 }
-
 .screen4_txt2{
-	opacity: 0;
-	color: #fff;
-	font-size: 26.02px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	position: absolute;
-	top: 109px;
-	left: 6px;
-	text-align: center;
+	font-size: 26px;
+	left: 6px;	top: 109px;
+	opacity: 1
 }
-
-.box
-{
-	position: absolute;
-	top: 180px;
-	right: -150px;
-	opacity:0;
-}
-
-.screen5{
-	height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-	display: none;
-	/*opacity:0;*/
-}
-
-.logo
-{
-	position:absolute;
-	top: 13px;
-	left: 8px;
-	opacity:0;
-}
-
 .screen5_txt1{
-	opacity: 0;
-	color: #FFF;
 	font-size: 18px;
 	font-family: "Roboto",sans-serif;
-	position: absolute;
-	top: 112px;
-	left: -7px;
-	text-align: center;
-	width: 172px;
+	left: 0px; top: 112px;
 	line-height: 21px;
-	letter-spacing: 0px;
+	opacity: 1;
 }
-
-
-#btn_txt{
+.pin10,.pin9,.pin8,.pin7,.pin6,.pin5,.pin4,.pin3,.pin2,.pin1{
 	position:absolute;
-	left: 16px;
-	top: 8.5px;
+	background: url(../img/navigation_pin.png) no-repeat 0 0 / cover;
+}
+.pin1{
+	left:6px;	 top:-5px;
+	width: 77px; height: 120px;
+	opacity: 0.4
+}
+.pin2{
+	left:105px; top:31px;
+	width: 31px; height: 49px;
+	opacity: 0.6
+}
+.pin3{
+	left:18px;	top:501px;
+	width: 77px; height: 120px;
+	opacity: 0.4
+}
+.pin4{
+	left:76px;	top:160px;
+	width: 31px; height: 49px;
+	opacity: 0.6
+}
+.pin5{
+	left:90px; top:480px;
+	width: 31px; height: 49px;
+	opacity: 0.6
+}
+.pin6{
+	left:112px; bottom:-12px;
+	width: 31px; height: 49px;
+	opacity: 0.6
+}
+.pin7{
+	left:-19px; bottom:121px;
+	width: 77px; height: 120px;
+	opacity: 0.4
+}
+.pin8{
+	left:119px;	top:102px;
+	width: 52px; height: 81px;
+	opacity: 0.8
+}
+.pin9{
+	left:-7px; top:126px;
+	width: 52px; height: 81px;
+	opacity: 0.8
+}
+.pin10{
+	left:97px;	 bottom: 150px;
+	width: 52px; height: 81px;
+	opacity: 0.8
 }
 
-#btn_arrow{
-	position:absolute;
-	left: 117px;
-	top: 5px;
-}
-
-
-.txtbtn
-{
+#btn_arrow,
+#btn_txt,
+.logo,
+.box{
 	position: absolute;
-	right: -188px;
-	top: 309px;
-	/*z-index: 2;*/
-	height: 36px;
-	text-align: center;
-	width: 188px;
-	margin-left: auto;
-	margin-right: auto;
+	/*opacity:0;*/
 }
-.shine{
-    position: absolute;
-    top: 309px;
-    left: -55px;
-    opacity: 0;
-    display: none;
-    z-index: 1;
+.box{
+	right: 17px; top: 196px;
+	width: 123px; height: 112px;
 }
+.logo{
+	/*width: 162px; height: 43px;*/
+	left: 8px;  top: 13px;
+}
+#btn_txt{	left: 16px; top: 8.5px; }
+#btn_arrow{ left: 117px; top: 5px; }
 
-.txtbtnhover
-{
+.txtbtnhover,
+.shine,
+.txtbtn2,
+.txtbtn{
 	position: absolute;
-	right: 4px;
-	top: 102px;
 	opacity: 0;
 	text-align: center;
-	width: 150px;
-	height: 31px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.txtbtn{
+	right: 10px; top: 309px;
+	width: 137px; height: 29px;
+	z-index: 3;
+	overflow: hidden;
+	border-radius: 5px;
+	/*opacity: 1*/
+}
+/*.txtbtn2{
+	top: 85px; right: 14px;
+	width: 96px; height: 40px;
+	z-index: 3;
+	overflow: hidden;
+	border-radius: 5px;
+}*/
+.shine{
+   left: -80px;
+   top: 0;
+   z-index: 1;
+   height: 40px
+}
+.txtbtnhover{
+	top: 102px; right: 4px;
+	width: 150px; height: 31px;
+}
 
 
 /*///////////////////////////////////////// Scroll /////////////////////////////////////*/
 .scrollBlock{
-	display: none;
-	opacity:0;
+	visibility: hidden;
 	height: 210px;
 	position: absolute;
-	/*left: 12px;*/
-	bottom: 35px;
-	z-index: 6;	
-    font-family: "Roboto",sans-serif;
+	left:0;
+	bottom:35px;
+	z-index: 6;
+   font-family: "Roboto",sans-serif;
 	font-weight: normal;
-    font-style: normal;
+   font-style: normal;
 	overflow:hidden;
 	width: 160px;
-	padding-left: 12px;
 }
 .scrollInner{
 	height:158px;
-	width:146px;	
+	width: 146px;
 }
 .mCustomScrollBox{
-	padding: 0px 15px 0px 5px;
+	padding: 0 15px 0 10px;
 }
 
 
@@ -439,32 +205,30 @@ img{
 }
 
 .scrollBlock h2{
-	font-size:12px;	
+	font-size:12px;
 	color: #fff;
 	margin: 0 0 10px 0;
 	padding: 0;
 }
 .scrollBlock h3{
-	font-size:12px;	
+	font-size:12px;
 	color:#fff;
 	margin: 10px 0 -7px 0;
 	padding: 0;
 }
 
 .scrollBlock p{
-	font-size:12px;	
-	line-height:1.2;
+	font-size:12px;
+	line-height: 1.2;
 	color:#fff;
 	margin: 10px 0 5px 0;
 	padding: 0;
 	letter-spacing: 0.5px;
 	opacity: 0.9;
-
-
 }
 
 .scrollBlock div{
-font-size:11px;	
+font-size:12px;
 color:#fff;
 margin: 0 0 0px 0;
 /*padding: 0;*/
@@ -473,10 +237,10 @@ font-weight: normal;
 font-style: normal;
 }
 
-.scrollBlock div ul{margin-left:-23px;}	
+.scrollBlock div ul{margin-left:-23px;}
 
 .scrollBlock div ul li{
-font-size:11px;	
+font-size:12px;
 color:#fff;
 margin: 0px 0px 5px 0px;
 padding: 0;
@@ -486,29 +250,25 @@ font-style: normal;
 }
 
 .scroll-content-title{
-	/*padding: 0px 10px 5px 6px;*/
-	padding-bottom:5px;
+	padding: 0px 10px 0px 6px;
 	font-family: "Roboto",sans-serif;
 	font-size:12px;
 	color:#fff;
 	font-weight:bold;
-	letter-spacing: 0.2px;line-height: 14px;margin-bottom: -2px;
 }
 
 .footer{
-	/*display: none;*/
+	visibility: hidden;
 	text-align: left;
-	height: 35px;
-	font-size: 10px;
-	font-weight: normal;
-	background-color: #fff;
-	font-family: "Roboto",sans-serif;
-	font-style: normal;
+   height: 35px;
+   font-size: 10px;
+   font-weight: normal;
+   background-color: #fff;
+   font-family: "Roboto",sans-serif;
+   font-style: normal;
 	position: absolute;
 	bottom: 0px;
-	width: 158px;
-	opacity:0;
-	display:none;
+	width: 160px;
 }
 
 .footer a, .scrollBlock a{
@@ -519,8 +279,10 @@ font-style: normal;
 	display: block;
 	width:100%;
 	height: 100%;
+	height: 600px;
 	cursor: pointer;
-	
+	overflow: hidden;
+	position: relative;
 }
 
 #txtBtn
@@ -604,7 +366,6 @@ z-index: 5;
 #terms_screen2
 {
 	cursor:pointer;
-	/*position:absolute;*/
 }
 
 #cta2,#cta3,#ISI_presc_info,#ISI_patient_info
@@ -620,24 +381,28 @@ z-index: 5;
 	cursor:pointer;
 	text-decoration:underline;
 }
+#isi_mylan{
+	position: relative;
+	left: 5px;
+}
 
 /********************** Scroll Bar CSS ****************/
 .mCSB_scrollTools .mCSB_buttonUp {
-	background: rgba(0, 0, 0, 0) url("arrow-up.png") no-repeat scroll center top;
+	background: rgba(0, 0, 0, 0) url("../img/arrow-up.png") no-repeat scroll center top;
 	height: 6px;
 	width: 12px;
 	margin-left: 1.2px;
 }
 
 .mCSB_scrollTools .mCSB_buttonDown {
-	background: rgba(0, 0, 0, 0) url("arrow-down.png") no-repeat scroll center top;
+	background: rgba(0, 0, 0, 0) url("../img/arrow-down.png") no-repeat scroll center top;
 	height: 6px;
 	width: 12px;
 	margin-left: 1.2px;
 }
 
 .mCSB_inside > .mCSB_container {
-	margin-right: 6px;
+	margin-right: 4px;
 	margin-left: -6px;
 }
 
@@ -650,12 +415,11 @@ z-index: 5;
 
 .mCSB_scrollTools {
     bottom: 0;
-	height: 152px;
-	left: auto;
-	position: absolute;
-	right: 3px;
-	top: 3px;
-	width: 14px;
+    height: 152px;
+    left: auto;
+    position: absolute;
+    right: 3px; top: 3px;
+    width: 14px;
 }
 
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
@@ -696,7 +460,7 @@ z-index: 5;
     left: 0;
     position: absolute;
     right: 0;
-    top: 4px;
+    top: 3px;
 }
 
 .mCSB_scrollTools .mCSB_dragger{
@@ -707,66 +471,123 @@ z-index: 5;
 
 #IIS_heading2
 {
-	padding-top: 9px;	
+	padding-top: 9px;
 }
 
 /*Updated scroll css*/
 			.mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover, .mCSB_scrollTools .mCSB_buttonUp:hover
 			{
-				opacity:1;	
+				opacity:1;
 			}
-			
+
 			.mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp
 			{
-				opacity:1;	
+				opacity:1;
 			}
-			
+
 			#mCSB_1_scrollbar_vertical
 			{
-				z-index:7;	
+				z-index:7;
+				padding: 0;
 			}
-			
-			
+
+
+
 
 
 /*************  Animation  **************/
 
-.clock1 { bottom: 95px; height: 132px; position: absolute; right: -49px; width: 132px; opacity: 0;}
-.clock1 .clock1bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat; width: 132px; height: 132px;}
-
-.clock2 { bottom: -15px; height: 80px; left: 70px; position: absolute; width: 80px; opacity: 0;}
-.clock2 .clock2bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 80px; height: 80px;}
-
-.clock3 { bottom: 64px; height: 45px; left: 17px; position: absolute; width: 45px; opacity: 0;}
-.clock3 .clock3bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 45px; height: 45px;}
-
-.clock4 { bottom: 93px; height: 132px; position: absolute; right: 182px; width: 132px; opacity: 0;}
-.clock4 .clock4bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat; width: 132px; height: 132px;}
-
-.clock5 { top: 176px; height: 45px; right: 106px; position: absolute; width: 45px; opacity: 0;}
-.clock5 .clock5bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 45px; height: 45px;}
-
-.clock6 { top: 31px; height: 80px; right: -32px; position: absolute; width: 80px; opacity: 0;}
-.clock6 .clock6bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 80px; height: 80px;}
-
-.clock7 { bottom: 136px;height: 45px;left: 246px; position: absolute; width: 45px; opacity: 0;}
-.clock7 .clock7bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 45px; height: 45px;}
-
-.clock8 { bottom: 147px; height: 80px; left: -18px; position: absolute; width: 80px; opacity: 0;}
-.clock8 .clock8bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 80px; height: 80px;}
-
-.clock9 { top: -8px; height: 132px; position: absolute; left: 11px; width: 132px; opacity: 0;}
-.clock9 .clock9bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat; width: 132px; height: 132px;}
-
-.clock10 { top: 61px; height: 132px; position: absolute; left: 51px; width: 132px; opacity: 0;}
-.clock10 .clock10bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat; width: 132px; height: 132px;}
-
-.clock11 { top: 6px; height: 80px; left: -15px; position: absolute; width: 80px; opacity: 0;}
-.clock11 .clock11bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 80px; height: 80px;}
-
-.clock12 { top: 172px; height: 45px; right:182px; position: absolute; width: 45px; opacity: 0;}
-.clock12 .clock12bg{ position: absolute; top: 0; left: 0; background: url(clock.png) no-repeat 0 0 / cover ; width: 45px; height: 45px;}
-
+.clock12,
+.clock11,
+.clock10,
+.clock9,
+.clock8,
+.clock7,
+.clock6,
+.clock5,
+.clock4,
+.clock3,
+.clock2,
+.clock1{
+	position: absolute;
+}
+.clock1 {
+	right: -20px; bottom: -31px;
+	width: 132px; height: 132px;
+	opacity: 0.35
+}
+.clock2 {
+	left: 27px; bottom: -3px;
+	width: 80px; height: 80px;
+	opacity: 0.9
+}
+.clock3{
+	left: 126px;	bottom: 71px;
+	width: 45px; height: 45px;
+	opacity: 0.65
+}
+.clock4 {
+	right: 182px; bottom: 93px;
+	width: 132px; height: 132px;
+	opacity: 0.4
+}
+.clock5 {
+	right: 90px; top: 17px;
+	width: 45px; height: 45px;
+	opacity: 0.65
+}
+.clock6{
+	right: -32px; top: 31px;
+	width: 80px; height: 80px;
+	opacity: 0.9
+}
+.clock7{
+	left: 246px; bottom: 136px;
+	width: 45px; height: 45px;
+	opacity: 0.65
+}
+.clock8{
+	left: 150px; bottom: 146px;
+	width: 80px; height: 80px;
+	opacity: 0.9
+}
+.clock9{
+	left: 11px; top: -8px;
+	width: 132px; height: 132px;
+	opacity: 0.35
+}
+.clock10{
+	left: 139px; top: 96px;
+	width: 132px; height: 132px;
+	opacity: 0.4
+}
+.clock11{
+	left: -27px; top: 133px;
+	width: 80px; height: 80px;
+	opacity: 0.9
+}
+.clock12{
+	right: 182px; top: 172px;
+	width: 45px; height: 45px;
+	opacity: 0.65
+}
+.clock12 .clock12bg,
+.clock11 .clock11bg,
+.clock10 .clock10bg,
+.clock9 .clock9bg,
+.clock8 .clock8bg,
+.clock7 .clock7bg,
+.clock6 .clock6bg,
+.clock5 .clock5bg,
+.clock4 .clock4bg,
+.clock3 .clock3bg,
+.clock2 .clock2bg,
+.clock1 .clock1bg{
+	position: absolute;
+	background: url(../img/clock.png) no-repeat 0 0 / cover ;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+}
 @-webkit-keyframes spinnerRotate
 {
     from{-webkit-transform:rotate(180deg);}
@@ -807,39 +628,44 @@ z-index: 5;
     -ms-animation-duration: 10s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
 
+.clock12h, .clock12m,
+.clock11h, .clock11m,
+.clock10h, .clock10m,
+.clock9h, .clock9m,
+.clock8h, .clock8m,
+.clock7h, .clock7m,
+.clock6h, .clock6m,
+.clock5h, .clock5m,
+.clock4h, .clock4m,
+.clock3h, .clock3m,
+.clock2h, .clock2m,
 .clock1h, .clock1m {
-    height: 132px;
-    width: 132px;
-    position: absolute;
-	opacity: 0.2;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   opacity: 0.2;
 }
-
-@-webkit-keyframes spinnerRotate1
-{
+/*hour*/
+@-webkit-keyframes spinnerRotate1{
     from{-webkit-transform:rotate(90deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate1
-{
+@-moz-keyframes spinnerRotate1{
     from{-moz-transform:rotate(90deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate1
-{
+@-ms-keyframes spinnerRotate1{
     from{-ms-transform:rotate(90deg);}
     to{-ms-transform:rotate(360deg);}
 }
-
-@keyframes spinnerRotate1
-{
+@keyframes spinnerRotate1{
     from{transform:rotate(90deg);}
     to{transform:rotate(360deg);}
 }
-.clock1h
-{
+.clock1h{
 	animation-name: spinnerRotate1;
     animation-duration: 40s;
     animation-iteration-count: infinite;
@@ -856,39 +682,26 @@ z-index: 5;
     -ms-animation-duration: 40s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
 
-.clock2h, .clock2m {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate2
-{
-    from{-webkit-transform:rotate(0deg);}
+@-webkit-keyframes spinnerRotate2{
+    from{-webkit-transform:rotate(-70deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate2
-{
-    from{-moz-transform:rotate(0deg);}
+@-moz-keyframes spinnerRotate2{
+    from{-moz-transform:rotate(-70deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate2
-{
-    from{-ms-transform:rotate(0deg);}
+@-ms-keyframes spinnerRotate2{
+    from{-ms-transform:rotate(-70deg);}
     to{-ms-transform:rotate(360deg);}
 }
-
-@keyframes spinnerRotate2
-{
-    from{transform:rotate(0deg);}
+@keyframes spinnerRotate2{
+    from{transform:rotate(-70deg);}
     to{transform:rotate(360deg);}
 }
-.clock2h
-{
+.clock2h{
 	animation-name: spinnerRotate2;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -898,21 +711,14 @@ z-index: 5;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotate2;
-    -moz-animation-duration: 34s;
+    -moz-animation-duration: 20s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotate2;
-    -ms-animation-duration: 10s;
+    -ms-animation-duration: 20s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
-}
-
-.clock3h, .clock3m {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-	opacity: 0.2;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
 
 @-webkit-keyframes spinnerRotate3
@@ -955,39 +761,25 @@ z-index: 5;
     -ms-animation-duration: 18s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
-
-.clock4h, .clock4m {
-    height: 132px;
-    width: 132px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate4
-{
+@-webkit-keyframes spinnerRotate4{
     from{-webkit-transform:rotate(-160deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate4
-{
+@-moz-keyframes spinnerRotate4{
     from{-moz-transform:rotate(-160deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate4
-{
+@-ms-keyframes spinnerRotate4{
     from{-ms-transform:rotate(-160deg);}
     to{-ms-transform:rotate(360deg);}
 }
-
-@keyframes spinnerRotate4
-{
+@keyframes spinnerRotate4{
     from{transform:rotate(-160deg);}
     to{transform:rotate(360deg);}
 }
-.clock4h
-{
+.clock4h{
 	animation-name: spinnerRotate4;
     animation-duration: 45s;
     animation-iteration-count: infinite;
@@ -1004,33 +796,21 @@ z-index: 5;
     -ms-animation-duration: 45s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
-
-.clock5h, .clock5m {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate5
-{
+@-webkit-keyframes spinnerRotate5{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate5
-{
+@-moz-keyframes spinnerRotate5{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate5
-{
+@-ms-keyframes spinnerRotate5{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotate5
-{
+@keyframes spinnerRotate5{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1054,39 +834,25 @@ z-index: 5;
     -ms-animation-duration: 18s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
-
-.clock6h, .clock6m {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate6
-{
+@-webkit-keyframes spinnerRotate6{
     from{-webkit-transform:rotate(-100deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate6
-{
+@-moz-keyframes spinnerRotate6{
     from{-moz-transform:rotate(-100deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate6
-{
+@-ms-keyframes spinnerRotate6{
     from{-ms-transform:rotate(-100deg);}
     to{-ms-transform:rotate(360deg);}
 }
-
-@keyframes spinnerRotate6
-{
+@keyframes spinnerRotate6{
     from{transform:rotate(-100deg);}
     to{transform:rotate(360deg);}
 }
-.clock6h
-{
+.clock6h{
 	animation-name: spinnerRotate6;
     animation-duration: 25s;
     animation-iteration-count: infinite;
@@ -1103,280 +869,200 @@ z-index: 5;
     -ms-animation-duration: 25s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
-
-.clock7h, .clock7m {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate7
-{
-    from{-webkit-transform:rotate(-160deg);}
+@-webkit-keyframes spinnerRotate7{
+    from{-webkit-transform:rotate(-100deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate7
-{
-    from{-moz-transform:rotate(-160deg);}
+@-moz-keyframes spinnerRotate7{
+    from{-moz-transform:rotate(-100deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate7
-{
-    from{-ms-transform:rotate(-160deg);}
+@-ms-keyframes spinnerRotate7{
+    from{-ms-transform:rotate(-100deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotate7
-{
-    from{transform:rotate(-160deg);}
+@keyframes spinnerRotate7{
+    from{transform:rotate(-100deg);}
     to{transform:rotate(360deg);}
 }
 .clock7h{
-    position: absolute;
-    top: 0;
-    left:0%;
 	animation-name: spinnerRotate7;
-    animation-duration: 18s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -webkit-animation-name: spinnerRotate7;
-    -webkit-animation-duration: 18s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate7;
-    -moz-animation-duration: 29s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate7;
-    -ms-animation-duration: 18s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
-}
-
-.clock8h, .clock8m {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate8
-{
-    from{-webkit-transform:rotate(60deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate8
-{
-    from{-moz-transform:rotate(60deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate8
-{
-    from{-ms-transform:rotate(60deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
-@keyframes spinnerRotate8
-{
-    from{transform:rotate(60deg);}
-    to{transform:rotate(360deg);}
-}
-.clock8h
-{
-	animation-name: spinnerRotate8;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-	-webkit-animation-name: spinnerRotate8;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate8;
-    -moz-animation-duration: 20s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate8;
-    -ms-animation-duration: 20s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
-}
-
-.clock9h, .clock9m {
-    height: 132px;
-    width: 132px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate9
-{
-    from{-webkit-transform:rotate(-80deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate9
-{
-    from{-moz-transform:rotate(-80deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate9
-{
-    from{-ms-transform:rotate(-80deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
-@keyframes spinnerRotate9
-{
-    from{transform:rotate(-80deg);}
-    to{transform:rotate(360deg);}
-}
-.clock9h
-{
-	animation-name: spinnerRotate9;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-	-webkit-animation-name: spinnerRotate9;
-    -webkit-animation-duration: 40s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate9;
-    -moz-animation-duration: 54s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate9;
-    -ms-animation-duration: 40s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
-}
-
-.clock10h, .clock10m {
-    height: 132px;
-    width: 132px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate10
-{
-    from{-webkit-transform:rotate(-20deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate10
-{
-    from{-moz-transform:rotate(-20deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate10
-{
-    from{-ms-transform:rotate(-20deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
-@keyframes spinnerRotate10
-{
-    from{transform:rotate(-20deg);}
-    to{transform:rotate(360deg);}
-}
-.clock10h
-{
-	animation-name: spinnerRotate10;
-    animation-duration: 45s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-	-webkit-animation-name: spinnerRotate10;
-    -webkit-animation-duration: 45s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate10;
-    -moz-animation-duration: 59s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate10;
-    -ms-animation-duration: 45s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
-}
-
-.clock11h, .clock11m {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-	opacity: 0.2;
-}
-
-@-webkit-keyframes spinnerRotate11
-{
-    from{-webkit-transform:rotate(-160deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
-@-moz-keyframes spinnerRotate11
-{
-    from{-moz-transform:rotate(-160deg);}
-    to{-moz-transform:rotate(360deg);}
-}
-@-ms-keyframes spinnerRotate11
-{
-    from{-ms-transform:rotate(-160deg);}
-    to{-ms-transform:rotate(360deg);}
-}
-
-@keyframes spinnerRotate11
-{
-    from{transform:rotate(-160deg);}
-    to{transform:rotate(360deg);}
-}
-.clock11h
-{
-	animation-name: spinnerRotate11;
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-	-webkit-animation-name: spinnerRotate11;
+	-webkit-animation-name: spinnerRotate7;
     -webkit-animation-duration: 25s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-    -moz-animation-name: spinnerRotate11;
+    -moz-animation-name: spinnerRotate7;
     -moz-animation-duration: 39s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
-    -ms-animation-name: spinnerRotate11;
+    -ms-animation-name: spinnerRotate7;
     -ms-animation-duration: 25s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
-
-.clock12h, .clock12m {
-    height: 45px;
-    width: 45px;
-    position: absolute;
-	opacity: 0.2;
+@-webkit-keyframes spinnerRotate8{
+    from{-webkit-transform:rotate(90deg);}
+    to{-webkit-transform:rotate(360deg);}
 }
-
-@-webkit-keyframes spinnerRotate12
-{
+@-moz-keyframes spinnerRotate8{
+    from{-moz-transform:rotate(90deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate8{
+    from{-ms-transform:rotate(90deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+@keyframes spinnerRotate8{
+    from{transform:rotate(90deg);}
+    to{transform:rotate(360deg);}
+}
+.clock8h{
+	animation-name: spinnerRotate8;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	-webkit-animation-name: spinnerRotate8;
+    -webkit-animation-duration: 40s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate8;
+    -moz-animation-duration: 54s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate8;
+    -ms-animation-duration: 40s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
+}
+@-webkit-keyframes spinnerRotate9{
+    from{-webkit-transform:rotate(-70deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate9{
+    from{-moz-transform:rotate(-70deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate9{
+    from{-ms-transform:rotate(-70deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+@keyframes spinnerRotate9{
+    from{transform:rotate(-70deg);}
+    to{transform:rotate(360deg);}
+}
+.clock9h{
+	animation-name: spinnerRotate9;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	-webkit-animation-name: spinnerRotate9;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate9;
+    -moz-animation-duration: 20s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate9;
+    -ms-animation-duration: 20s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
+}
+@-webkit-keyframes spinnerRotate10{
     from{-webkit-transform:rotate(120deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotate12
-{
+@-moz-keyframes spinnerRotate10{
     from{-moz-transform:rotate(120deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotate12
-{
+@-ms-keyframes spinnerRotate10{
     from{-ms-transform:rotate(120deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotate12
-{
+@keyframes spinnerRotate10{
     from{transform:rotate(120deg);}
+    to{transform:rotate(360deg);}
+}
+.clock10h{
+    position: absolute;
+    top: 0;
+    left:0%;
+	animation-name: spinnerRotate10;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spinnerRotate10;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate10;
+    -moz-animation-duration: 29s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate10;
+    -ms-animation-duration: 18s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
+}
+@-webkit-keyframes spinnerRotate11{
+    from{-webkit-transform:rotate(-160deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate11{
+    from{-moz-transform:rotate(-160deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate11{
+    from{-ms-transform:rotate(-160deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+@keyframes spinnerRotate11{
+    from{transform:rotate(-160deg);}
+    to{transform:rotate(360deg);}
+}
+.clock11h{
+	animation-name: spinnerRotate11;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	-webkit-animation-name: spinnerRotate11;
+    -webkit-animation-duration: 45s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate11;
+    -moz-animation-duration: 59s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate11;
+    -ms-animation-duration: 45s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
+}
+@-webkit-keyframes spinnerRotate12{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate12{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate12{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+@keyframes spinnerRotate12{
+    from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
 .clock12h{
@@ -1399,27 +1085,22 @@ z-index: 5;
     -ms-animation-duration: 18s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("hour.png") no-repeat scroll 0 0 / cover ;
+	background: rgba(0, 0, 0, 0) url("../img/hour.png") no-repeat scroll 0 0 / cover ;
 }
-/*Minute rotation*/
-
-@-webkit-keyframes spinnerRotatem
-{
+/*minutes*/
+@-webkit-keyframes spinnerRotatem{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem
-{
+@-moz-keyframes spinnerRotatem{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem
-{
+@-ms-keyframes spinnerRotatem{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem
-{
+@keyframes spinnerRotatem{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1443,26 +1124,21 @@ z-index: 5;
     -ms-animation-duration: 2s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem1
-{
+@-webkit-keyframes spinnerRotatem1{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem1
-{
+@-moz-keyframes spinnerRotatem1{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem1
-{
+@-ms-keyframes spinnerRotatem1{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem1
-{
+@keyframes spinnerRotatem1{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1486,26 +1162,21 @@ z-index: 5;
     -ms-animation-duration: 22s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem2
-{
+@-webkit-keyframes spinnerRotatem2{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem2
-{
+@-moz-keyframes spinnerRotatem2{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem2
-{
+@-ms-keyframes spinnerRotatem2{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem2
-{
+@keyframes spinnerRotatem2{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1529,26 +1200,21 @@ z-index: 5;
     -ms-animation-duration: 12s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem3
-{
+@-webkit-keyframes spinnerRotatem3{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem3
-{
+@-moz-keyframes spinnerRotatem{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem3
-{
+@-ms-keyframes spinnerRotatem3{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem3
-{
+@keyframes spinnerRotatem3{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1572,26 +1238,21 @@ z-index: 5;
     -ms-animation-duration: 5s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem4
-{
+@-webkit-keyframes spinnerRotatem4{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem4
-{
+@-moz-keyframes spinnerRotatem4{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem4
-{
+@-ms-keyframes spinnerRotatem4{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem4
-{
+@keyframes spinnerRotatem4{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1615,25 +1276,21 @@ z-index: 5;
     -ms-animation-duration: 27s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-@-webkit-keyframes spinnerRotatem5
-{
+@-webkit-keyframes spinnerRotatem5{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem5
-{
+@-moz-keyframes spinnerRotatem5{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem5
-{
+@-ms-keyframes spinnerRotatem5{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem5
-{
+@keyframes spinnerRotatem5{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1657,25 +1314,21 @@ z-index: 5;
     -ms-animation-duration: 5s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-@-webkit-keyframes spinnerRotatem6
-{
+@-webkit-keyframes spinnerRotatem6{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem6
-{
+@-moz-keyframes spinnerRotatem6{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem6
-{
+@-ms-keyframes spinnerRotatem6{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem6
-{
+@keyframes spinnerRotatem6{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1699,27 +1352,22 @@ z-index: 5;
     -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem7
-{
-    from{-webkit-transform:rotate(-10deg);}
+@-webkit-keyframes spinnerRotatem7{
+    from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem7
-{
-    from{-moz-transform:rotate(-10deg);}
+@-moz-keyframes spinnerRotatem7{
+    from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem7
-{
-    from{-ms-transform:rotate(-10deg);}
+@-ms-keyframes spinnerRotatem7{
+    from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem7
-{
-    from{transform:rotate(-10deg);}
+@keyframes spinnerRotatem7{
+    from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
 .clock7m{
@@ -1727,41 +1375,36 @@ z-index: 5;
     top: 0;
     left:0%;
 	animation-name: spinnerRotatem7;
-    animation-duration: 5s;
+    animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: spinnerRotatem7;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotatem7;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 17s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotatem7;
-    -ms-animation-duration: 5s;
+    -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem8
-{
+@-webkit-keyframes spinnerRotatem8{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem8
-{
+@-moz-keyframes spinnerRotatem8{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem8
-{
+@-ms-keyframes spinnerRotatem8{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem8
-{
+@keyframes spinnerRotatem8{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1770,40 +1413,36 @@ z-index: 5;
     top: 0;
     left:0%;
 	animation-name: spinnerRotatem8;
-    animation-duration: 12s;
+    animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: spinnerRotatem8;
-    -webkit-animation-duration: 12s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotatem8;
-    -moz-animation-duration: 12s;
+    -moz-animation-duration: 17s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotatem8;
-    -ms-animation-duration: 12s;
+    -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-@-webkit-keyframes spinnerRotatem9
-{
+@-webkit-keyframes spinnerRotatem9{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem9
-{
+@-moz-keyframes spinnerRotatem9{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem9
-{
+@-ms-keyframes spinnerRotatem9{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem9
-{
+@keyframes spinnerRotatem9{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1812,40 +1451,36 @@ z-index: 5;
     top: 0;
     left:0%;
 	animation-name: spinnerRotatem9;
-    animation-duration: 22s;
+    animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: spinnerRotatem9;
-    -webkit-animation-duration: 22s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotatem9;
-    -moz-animation-duration: 22s;
+    -moz-animation-duration: 17s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotatem9;
-    -ms-animation-duration: 22s;
+    -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-@-webkit-keyframes spinnerRotatem10
-{
+@-webkit-keyframes spinnerRotatem10{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem10
-{
+@-moz-keyframes spinnerRotatem10{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem10
-{
+@-ms-keyframes spinnerRotatem10{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem10
-{
+@keyframes spinnerRotatem10{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1854,40 +1489,36 @@ z-index: 5;
     top: 0;
     left:0%;
 	animation-name: spinnerRotatem10;
-    animation-duration: 27s;
+    animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: spinnerRotatem10;
-    -webkit-animation-duration: 27s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotatem10;
-    -moz-animation-duration: 27s;
+    -moz-animation-duration: 17s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotatem10;
-    -ms-animation-duration: 27s;
+    -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-@-webkit-keyframes spinnerRotatem11
-{
+@-webkit-keyframes spinnerRotatem11{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem11
-{
+@-moz-keyframes spinnerRotatem11{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem11
-{
+@-ms-keyframes spinnerRotatem11{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem11
-{
+@keyframes spinnerRotatem11{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1895,7 +1526,7 @@ z-index: 5;
     position: absolute;
     top: 0;
     left:0%;
-	animation-name: spinnerRotatem111;
+	animation-name: spinnerRotatem11;
     animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -1911,26 +1542,21 @@ z-index: 5;
     -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
-@-webkit-keyframes spinnerRotatem12
-{
+@-webkit-keyframes spinnerRotatem12{
     from{-webkit-transform:rotate(0deg);}
     to{-webkit-transform:rotate(360deg);}
 }
-@-moz-keyframes spinnerRotatem12
-{
+@-moz-keyframes spinnerRotatem12{
     from{-moz-transform:rotate(0deg);}
     to{-moz-transform:rotate(360deg);}
 }
-@-ms-keyframes spinnerRotatem12
-{
+@-ms-keyframes spinnerRotatem12{
     from{-ms-transform:rotate(0deg);}
     to{-ms-transform:rotate(360deg);}
 }
-@keyframes spinnerRotatem12
-{
+@keyframes spinnerRotatem12{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
@@ -1939,26 +1565,24 @@ z-index: 5;
     top: 0;
     left:0%;
 	animation-name: spinnerRotatem12;
-    animation-duration: 5s;
+    animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: spinnerRotatem12;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotatem12;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 17s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotatem12;
-    -ms-animation-duration: 5s;
+    -ms-animation-duration: 17s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-	background: rgba(0, 0, 0, 0) url("minute.png") no-repeat scroll 0 0 / cover;
+	background: rgba(0, 0, 0, 0) url("../img/minute.png") no-repeat scroll 0 0 / cover;
 }
-
 #clickTag2{
 position: absolute;
-top: 6px;
-left: 14px;
-color: #5d5d5e;}
+left: 14px; top: 6px;
+color: #5d5d5e;	}

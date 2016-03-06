@@ -865,8 +865,8 @@ z-index: 5;
 }
 
 .clock6h, .clock6m {
-    height: 80px;
-    width: 80px;
+    height: 132px;
+    width: 132px;
     position: absolute;
 	opacity: 0.2;
 }
@@ -1304,6 +1304,6 @@ z-index: 5;
 
 #clickTag2{
 position: absolute;
-top: 2px;
-left: 6px;
+top: 6px;
+left: 14px;
 color: #5d5d5e;}
