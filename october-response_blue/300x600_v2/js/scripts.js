@@ -89,7 +89,7 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 var t1 = new TimelineLite();
 t1
 .to(s2, 0, {autoAlpha:1, ease:"easeInOutBack"}, "one")
-.from(s2t1, 1, {top:260, ease:"easeInOutBack"}, "+=0.5")
+.from(s2t2, 1, {top:"-=20", ease:"easeInOutBack"}, "+=0.5")
 .to(s2t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=1")
 .from(clock1,0.5,{scale:0,ease:"easeInOutBack"})
 .from(clock4,0.5,{scale:0,ease:"easeInOutBack"}, "-=0.5")
@@ -103,7 +103,7 @@ t1
 .from(clock10,0.5,{scale:0,ease:"easeInOutBack"}, "-=0.5")
 .from(clock11,0.5,{scale:0,ease:"easeInOutBack"}, "-=0.25")
 .from(clock12,0.5,{scale:0,ease:"easeInOutBack"})
-/*.to(s2, 1, {autoAlpha:0, ease:"easeInOutBack"},"cross")
+.to(s2, 1, {autoAlpha:0, ease:"easeInOutBack"},"cross")
 .to(s3, 1, {autoAlpha:1, ease:"easeInOutBack"},"cross")
 .to(s2t2, 1, {top:"-=20", ease:"easeInOutBack"},"cross")
 .from(s3t2, 1, {opacity:0, top:"-=20", ease:"easeInOutBack"},"-=0.5")
@@ -117,7 +117,7 @@ t1
 .from(pin8,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin10,0.25,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=0.25")
-.to(s3, 1, {autoAlpha:0, ease:"easeInOutBack"})
+/*.to(s3, 1, {autoAlpha:0, ease:"easeInOutBack"})
 .to(s4, 1, {autoAlpha:1, ease:"easeInOutBack"}, "fourin-=1")
 // .to(s4t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.25")
 .from(s4box, 0.5, {css: {right:"-=200"}, ease:"easeOutExpo"}, "-=0.25")
