@@ -117,10 +117,10 @@ t1
 .from(pin8,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin9,0.5,{top:"-=30",opacity:0,ease:"easeInOutBack"})
 .from(pin10,0.25,{top:"-=30",opacity:0,ease:"easeInOutBack"}, "-=0.25")
-/*.to(s3, 1, {autoAlpha:0, ease:"easeInOutBack"})
+.to(s3, 1, {autoAlpha:0, ease:"easeInOutBack"})
 .to(s4, 1, {autoAlpha:1, ease:"easeInOutBack"}, "fourin-=1")
 // .to(s4t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.25")
-.from(s4box, 0.5, {css: {right:"-=200"}, ease:"easeOutExpo"}, "-=0.25")
+.from(s4box, 0.5, {css: {right:"-=350"}, ease:"easeOutExpo"}, "-=0.25")
 .to(scroller, 1, {autoAlpha:1, ease:"easeInOutBack"})
 .to(footer, 1, {autoAlpha:1, ease:"easeInOutBack"}, "-=1")
 .to(s5, 1, {autoAlpha:1, ease:"easeOut"}, "fourout")
@@ -131,7 +131,7 @@ t1
 .from(cta, 1, {right:"-=200", ease:"easeInOutBack"}, "cta-=1")
 .to(cta, 1, {opacity:1, ease:"easeInOutBack"}, "cta-=1")
 .to(shine, 2, {css: {opacity:1, left:150}, ease:"easeInOutExpo"})
-*/;
+;
 ISIscroll();
 // t1.seek("fourin");
 // t1.seek("fourout");
