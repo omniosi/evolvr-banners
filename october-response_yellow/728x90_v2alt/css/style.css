@@ -78,7 +78,7 @@ img{ border: 0; }
 }
 #f1_img1{
     z-index: 10;
-    left:172px;top:23px;
+    left: 279px; top: 1px;
 }
 #f2_img1{
     left:132px;top:-55px;
@@ -89,10 +89,10 @@ img{ border: 0; }
     left: 58px; top: 8px
 }
 #f1_txt1{
-    left: 13px; top: 43px;
+    left: 25px; top: 22px;
 }
 #f1_txt2{
-    left: 13px; top: 88px;
+    left: 25px; top: 44px;
     opacity: 0
 }
 #f2_txt1{
@@ -250,7 +250,7 @@ h3,strong { font-weight: bold; }
     position: absolute;
     background: #FFF none repeat scroll 0% 0%;
     width: 289px;
-    bottom: 0px;
+    bottom: 1px;
     padding-top: 3px;
     height: 15px;
     font-family: 'Roboto', sans-serif;
