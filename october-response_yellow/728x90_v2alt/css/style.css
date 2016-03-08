@@ -12,8 +12,8 @@ img{ border: 0; }
 
 #banner{
     position: relative;
-    width: 300px;
-    height: 250px;
+    width: 728px;
+    height: 90px;
 }
 
 /* //////////// LOADER //////////////////*/
@@ -25,19 +25,19 @@ img{ border: 0; }
     color: #666;
     top: 0;
     left: 0;
-    width: 150px;/*width of banner-2*/
-    height: 125px;/*height of banner-2*/
+    width: 364px;/*width of banner-2*/
+    height: 45px;/*height of banner-2*/
 }
 .loading {
     position: absolute;
     width: 100%;
-    top: 116px;
+    top: 40px;
     text-align: center;
-    left: 78px;
+    left: 314px;
 }
 #clickTagHolder{
-    width: 300px;
-    height: 147px;
+    width: 500px;
+    height: 90px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -48,7 +48,7 @@ img{ border: 0; }
 
 #container {
     position: relative;
-    width: 300px; height: 250px;
+    width: 728px; height: 90px;
     left: 0; top: 0;
     overflow: hidden;
     border: 1px solid #999;
@@ -63,7 +63,7 @@ img{ border: 0; }
     position: absolute;
 }
 #isi_img{
-    left: 9px; top: 150px;
+    left: 438px; top: 0px;
 }
 #f5_img1,
 #f4_img1,
@@ -175,24 +175,19 @@ h3,strong { font-weight: bold; }
 .scrollBlock,
 .smallText {
     position: absolute;
-    left: 0;
-    /*-moz-box-shadow: inset 0 -3px 3px -3px #000;
-    -webkit-box-shadow: inset 0 -3px 3px -3px #000*/
+    left: 428px;
 }
 .scrollBlock {
-    height: 50px;
-    top: 175px;
+    height: 49px;
+    top: 18px;
     z-index: 4;
-    /*width: 298px;*/
-    width: 285px;
-    left: 10px;
-    line-height: 1.1;
+    width: 298px;
 }
 .scrollInner {
-    height: 50px
+    height: 49px
 }
 .mCustomScrollBox {
-    /*padding: 0 10px*/
+    padding: 0 10px
 }
 .smallText {
     background: 0 0;
@@ -254,14 +249,15 @@ h3,strong { font-weight: bold; }
     text-align: left;
     position: absolute;
     background: #FFF none repeat scroll 0% 0%;
-    width: 300px;
-    top: 230px;
+    width: 289px;
+    bottom: 0px;
     padding-top: 3px;
-    height: 18px;
+    height: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     color: #5d5d5e;
-    padding-left: 9px;
+    padding-left: 4px;
+    right: 0;
     z-index: 10
 }
 .footer span,
