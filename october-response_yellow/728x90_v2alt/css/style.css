@@ -36,7 +36,7 @@ img{ border: 0; }
     left: 314px;
 }
 #clickTagHolder{
-    width: 500px;
+    width: 434px;
     height: 90px;
     position: absolute;
     left: 0px;
@@ -73,20 +73,23 @@ img{ border: 0; }
     position: absolute;
     /*left: 152px; top: -35px;*/
     left: 92px; top: -95px;
-    /*width: 62px; height: 62px;*/
-    width: 100px; height: 100px;
+    width: 85px; height: 85px;
 }
 #f1_img1{
     z-index: 10;
     left: 279px; top: 1px;
-}
-#f2_img1{
-    left:132px;top:-55px;
-    opacity: 0.6;
+    background: url(../img/patient-no-arm.png) no-repeat 0 0 / cover;
 }
 #pArm{
     position: absolute;
-    left: 58px; top: 8px
+    transform: scale(0.85);
+    left: 49px; top: 3px
+}
+#f2_img1{
+    /*left:132px;top:-55px;*/
+    left:210px;top:-55px;
+    opacity: 0.6;
+    background: url(../img/f2_img1.png) no-repeat 0 0 / cover;
 }
 #f1_txt1{
     left: 25px; top: 22px;
@@ -96,20 +99,18 @@ img{ border: 0; }
     opacity: 0
 }
 #f2_txt1{
-    left: 13px; top: 88px;
+    left: 24px; top: 44px;
     opacity: 0;
 }
 #f2_img1 #cover{
     position: absolute;
-    left: 62px; top: 70px;
+    left: 50px; top: 60px;
 }
 #heart_sign{
-    left: 52px; top: 72px;
+    left: 40px; top: 60px;
 }
 #f3_txt1{
-    position: absolute;
-    top: 78px;
-    left: 13px;
+    left: 24px; top: 44px;
     opacity: 0;
 }
 #cross_sign,
@@ -117,30 +118,31 @@ img{ border: 0; }
     position: absolute;
 }
 #white_patch{
-    left: 42px; top: 10px;
+    left: 36px; top: 9px;
 }
 #cross_sign{
-    left: 41px; top: 10px;
+    left: 33px; top: 6px;
+}
+#f3_img1{
+    background: url(../img/f3_img1.png) no-repeat 0 0 / cover;
 }
 #f4_img1{
-    background: url(../img/green_patch.png) no-repeat;
+    background: url(../img/green_patch.png) no-repeat 0 0 / cover;
 }
 #f4_txt1{
     position: absolute;
-    top: 33px;
-    left: 11px;
+    left: 24px; top: 10px;
     opacity: 0;
 }
 #f4_txt2{
     position: absolute;
-    top: 58px;
-    left: 11px;
+    left: 24px; top: 33px;
     opacity: 0;
 }
 #epipen_pack{
     position: absolute;
     left: 10px; top: 8px;
-    width: 79px; height: 81px;
+    width: 64px; height: 66px;
 }
 #f5_btn,
 #logo,
@@ -150,20 +152,20 @@ img{ border: 0; }
     visibility: hidden;
 }
 #f5_pen{
-    left: 193px; top: 3px;
+    left: 137px; top: 19px;
 }
 #logo{
     left: 0px; top: 0px;
 }
 #f5_btn{
-    left: 80px; top: 69px;
+    left: 273px; top: 14px;
     cursor: pointer;
     z-index: 2;
     overflow: hidden;
 }
 #shine{
     position: absolute;
-    left: -250px; top: 0px;
+    left: -150px; top: 0px;
     z-index: 3;
     height: 70px;
 }
@@ -249,10 +251,10 @@ h3,strong { font-weight: bold; }
     text-align: left;
     position: absolute;
     background: #FFF none repeat scroll 0% 0%;
-    width: 289px;
-    bottom: 1px;
+    width: 292px;
+    bottom: 0;
     padding-top: 3px;
-    height: 15px;
+    height: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     color: #5d5d5e;
