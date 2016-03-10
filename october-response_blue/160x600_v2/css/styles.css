@@ -193,7 +193,8 @@ img{ max-width: 100%; border: none; }
 }
 .scrollInner{
 	height:158px;
-	width: 146px;
+	/*width: 146px;*/
+	width: 158px;
 }
 .mCustomScrollBox{
 	padding: 0 15px 0 10px;
