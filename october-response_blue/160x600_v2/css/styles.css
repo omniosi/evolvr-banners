@@ -385,6 +385,7 @@ z-index: 5;
 #isi_mylan{
 	position: relative;
 	left: 5px;
+	padding: 0;
 }
 
 /********************** Scroll Bar CSS ****************/
