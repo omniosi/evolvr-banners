@@ -304,6 +304,7 @@ font-style: normal;
 #isi_mylan{
 	position: relative;
 	left: 3px;
+	padding-bottom: 0;
 }
 #ISI_medwatch
 {
