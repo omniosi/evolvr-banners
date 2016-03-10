@@ -301,7 +301,10 @@ font-style: normal;
 	color:#fff;
 	text-decoration:underline;
 }
-
+#isi_mylan{
+	position: relative;
+	left: 3px;
+}
 #ISI_medwatch
 {
 	color:#00529B;
