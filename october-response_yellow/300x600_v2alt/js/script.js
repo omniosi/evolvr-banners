@@ -62,7 +62,7 @@ tll1
 .to( arm, 0.5, {rotation:"-=30",transformOrigin:"45% bottom",ease:Back.easeOut.config(0.8)},"-=0.5")
 .to( arm, 0.5, {rotation:"+=30",transformOrigin:"45% bottom",ease:Back.easeOut.config(0.8)})
 .to( arm, 0.5, {rotation:"-=30",transformOrigin:"45% bottom",ease:Back.easeOut.config(0.8)})
-/*.to( f1_t2, 0.5, {top: "-=20",autoAlpha:0, ease:"easeInOutBack"})
+.to( f1_t2, 0.5, {top: "-=20",autoAlpha:0, ease:"easeInOutBack"})
 .from( f2_t1, 1, {top: "-=20", ease:"easeInOutBack"})
 .to( f2_t1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=1")
 .to( f2_i1, 1, {scale:1,opacity:1, left:l2, top:t2, ease:Back.easeOut.config(0.8)},"-=1")
@@ -75,7 +75,6 @@ tll1
 .to( heart, 0.5, {scale:0.5,ease:Back.easeIn.config(0.8)})
 .to( heart, 0.5, {scale:1.0,ease:Back.easeOut.config(0.8)})
 .to( f2_t1, 0.5, {top: "-=20",autoAlpha:0, ease:"easeInOutBack"},"-=1")
-.to( f1_t1, 1, {top: "30", ease:"easeInOutBack"})
 .from( f3_t1, 1, {top: "-=20", ease:"easeInOutBack"})
 .to( f3_t1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=1")
 .to( f3_i1, 1, {scale:1,opacity:1, left:l2,top:t2, ease:Back.easeOut.config(0.8)},"-=1")
@@ -96,8 +95,8 @@ tll1
 .to( penArt, 1, {rotation:-90, ease:"easeInOutBack"})
 .to( penArt, 1, {rotation:47, ease:"easeOutBack"})
 .to( f3_i1, 1, {scale:0.4,opacity:o2,left:l4,top:t4,ease:Back.easeOut.config(0.8)},"-=1")
-.to( f5_i1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=0.5")
-.to( f5_i1, 0.5, {scale:1,left:43,top:96, ease:"easeInOut"})
+.to( f5_i1, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=0.25")
+.to( f5_i1, 0.5, {scale:1,left:13,top:112, ease:"easeInOut"},"-=0.5")
 .to( f4_i1, 0.5, {autoAlpha:0, ease:"easeInOutBack"},"-=1")
 .to( f4_t1, 0.5, {autoAlpha:0, ease:"easeInOutBack"},"-=1.5")
 .to( f4_t2, 0.5, {autoAlpha:0, ease:"easeInOutBack"},"-=1.5")
@@ -106,4 +105,4 @@ tll1
 .from( f5_i2, 1, {left:300, ease:"easeInOutBack"},"-=2")
 .from( f5_i3, 0.5, {left:300, ease:"easeInOutExpo"},"-=0.5")
 .to(shine, 2, {left:250, ease:Back.easeInOut},"-=1")
-*/;
+;
