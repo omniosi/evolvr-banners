@@ -52,7 +52,7 @@ var l1 = "-76" // position ("-48") minus half the size transform difference (57)
 tll1
 .set(f2_i1,{scale:0.6})
 .set(f3_i1,{scale:0.4})
-.set(cross,{scale:0.5})
+.set(cross,{scale:0.7})
 .set(f4_i1,{scale:0.4})
 .set(f5_pen,{scale:0.6})
 .to( f2_i1, 0, {opacity: o1, ease:"easeInOutBack"})

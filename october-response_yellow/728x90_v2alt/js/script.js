@@ -52,7 +52,7 @@ var l1 = 220 // position (230) minus half the size transform difference (20)
 tll1
 .set(f2_i1,{scale:0.6, left:l1, top:t1})
 .set(f3_i1,{scale:0.4})
-.set(cross,{scale:0.5})
+.set(cross,{scale:0.6})
 .set(f4_i1,{scale:0.4})
 .to( f2_i1, 0, {opacity: o1, ease:"easeInOutBack"})
 .from( f1_t2, 1, {top: "-=20", ease:"easeInOutBack"},"-=1")
