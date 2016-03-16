@@ -59,7 +59,7 @@ img{ max-width: 100%; border: none; }
 .screen5_txt1{
 	font-size: 19px;
 	font-family: "Roboto",sans-serif;
-	left: 135px; top: 11px;
+	left: 135px; top: 17px;
 	text-align: left;
 	width: 172px;
 	line-height: 21px;
@@ -72,7 +72,7 @@ img{ max-width: 100%; border: none; }
 }
 .logo{
 	position:absolute;
-	top: 14px;
+	top: 18px;
 	left: 7px;
 }
 
@@ -115,7 +115,7 @@ img{ max-width: 100%; border: none; }
 #btn_arrow{ left: 117px; top: 5px; }
 .txtbtn,
 .txtbtn2{
-	top: 30px; left: 315px;
+	top: 30px; left: 312px;
 	z-index: 2;
 	text-align: center;
 	width: 104px; height: 44px;
