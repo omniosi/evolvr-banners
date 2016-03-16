@@ -54,6 +54,7 @@ tll1
 .set(f3_i1,{scale:0.4})
 .set(cross,{scale:0.6})
 .set(f4_i1,{scale:0.4})
+.set(f4_t2,{scale:0.9})
 .to( f2_i1, 0, {opacity: o1, ease:"easeInOutBack"})
 .from( f1_t2, 1, {top: "-=20", ease:"easeInOutBack"},"-=1")
 .to( f1_t2, 1, {opacity:1, ease:"easeInOutBack"},"-=1")
