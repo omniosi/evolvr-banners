@@ -83,7 +83,6 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 // Animations
 var t1 = new TimelineLite();
 t1
-<<<<<<< HEAD
 .to(s1, 0, {autoAlpha:1, ease:"easeInOutBack"}, "one")
 .to(s1, 1, {autoAlpha:0, ease:"easeInOutBack"},"+=1.5")
 .to(s2, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=0.5")
