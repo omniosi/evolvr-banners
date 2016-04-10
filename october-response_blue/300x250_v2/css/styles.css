@@ -16,6 +16,7 @@ img{
 	border: none;
 }
 
+.screen1,
 .screen5,
 .screen4,
 .screen3,
@@ -25,6 +26,7 @@ img{
    width: 100%; height: 100%;
    visibility: hidden;
 }
+.screen1_txt1,
 .screen5_txt1,
 .screen4_txt2,
 .screen4_txt1,
@@ -38,6 +40,11 @@ img{
 	position: absolute;
 	text-align: center;
 	opacity: 0;
+}
+.screen1_txt1{
+	opacity: 1;
+	font-size: 28px;
+	left: 57px; top: 96px;
 }
 .screen2_txt1{
 	opacity: 1;

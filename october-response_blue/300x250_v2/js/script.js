@@ -47,6 +47,7 @@ function ISIscroll(){
 
 // Elements
 var      s2 = document.getElementsByClassName('screen2')[0]
+,          s1 = document.getElementsByClassName('screen1')[0]
 ,          s3 = document.getElementsByClassName('screen3')[0]
 ,          s4 = document.getElementsByClassName('screen4')[0]
 ,          s5 = document.getElementsByClassName('screen5')[0]
@@ -82,7 +83,9 @@ var      s2 = document.getElementsByClassName('screen2')[0]
 // Animations
 var t1 = new TimelineLite();
 t1
-.to(s2, 0, {autoAlpha:1, ease:"easeInOutBack"}, "one")
+.to(s1, 0, {autoAlpha:1, ease:"easeInOutBack"}, "one")
+.to(s1, 1, {autoAlpha:0, ease:"easeInOutBack"},"+=1.5")
+.to(s2, 1, {autoAlpha:1, ease:"easeInOutBack"},"-=0.5")
 .from(s2t1, 1, {top:100, ease:"easeInOutBack"}, "+=0.5")
 .to(s2t2, 1, {css: {opacity:1}, ease:"easeInOutBack"}, "-=0.5")
 .from(clock1,0.5,{scale:0,ease:"easeInOutBack"})
